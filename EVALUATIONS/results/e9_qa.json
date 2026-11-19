@@ -1,0 +1,785 @@
+{
+ "questions": 31,
+ "by_type": {
+  "single": 22,
+  "multi": 5,
+  "unanswerable": 4
+ },
+ "retrieval": {
+  "bm25": {
+   "recall@1": 0.222,
+   "recall@3": 0.519,
+   "recall@5": 0.593
+  },
+  "dense": {
+   "recall@1": 0.148,
+   "recall@3": 0.259,
+   "recall@5": 0.481
+  },
+  "hybrid (graph + bm25)": {
+   "recall@1": 0.593,
+   "recall@3": 0.852,
+   "recall@5": 0.852
+  }
+ },
+ "graph_answers": {
+  "single": {
+   "correct": 15,
+   "wrong": 4,
+   "abstained": 3
+  },
+  "all": {
+   "correct": 15,
+   "wrong": 9,
+   "abstained": 3,
+   "abstained_correct": 4
+  },
+  "multi": {
+   "wrong": 5
+  },
+  "unanswerable": {
+   "abstained_correct": 4
+  }
+ },
+ "per_question": [
+  {
+   "id": "s01",
+   "type": "single",
+   "question": "What is the face amount of the employee's certificate?",
+   "gold": "10000.00",
+   "graph_field": "face_amount",
+   "graph_answer": "10000.00",
+   "outcome": "correct",
+   "evidence_matches_gold_page": true,
+   "why": "3 evidence page(s)"
+  },
+  {
+   "id": "s02",
+   "type": "single",
+   "question": "What is the certificate date?",
+   "gold": "2022-08-01",
+   "graph_field": "certificate_date",
+   "graph_answer": "2022-08-01",
+   "outcome": "correct",
+   "evidence_matches_gold_page": true,
+   "why": "4 evidence page(s)"
+  },
+  {
+   "id": "s03",
+   "type": "single",
+   "question": "What is the insured's date of birth?",
+   "gold": "1994-03-16",
+   "graph_field": "date_of_birth",
+   "graph_answer": "1994-03-16",
+   "outcome": "correct",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "s04",
+   "type": "single",
+   "question": "What was the insured's issue age?",
+   "gold": "28",
+   "graph_field": "issue_age",
+   "graph_answer": "28",
+   "outcome": "correct",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "s05",
+   "type": "single",
+   "question": "When does the certificate mature?",
+   "gold": "2115-08-01",
+   "graph_field": "certificate_date",
+   "graph_answer": "2022-08-01",
+   "outcome": "wrong",
+   "evidence_matches_gold_page": true,
+   "why": "4 evidence page(s)"
+  },
+  {
+   "id": "s06",
+   "type": "single",
+   "question": "What risk class is the insured in?",
+   "gold": "non-tobacco",
+   "graph_field": "risk_class",
+   "graph_answer": "non-tobacco",
+   "outcome": "correct",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "s07",
+   "type": "single",
+   "question": "What is the loan interest rate on the certificate?",
+   "gold": "8",
+   "graph_field": "loan_interest_rate",
+   "graph_answer": "8",
+   "outcome": "correct",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "s08",
+   "type": "single",
+   "question": "What is the annual certificate premium, excluding riders?",
+   "gold": "128.40",
+   "graph_field": "annual_premium",
+   "graph_answer": "128.40",
+   "outcome": "correct",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "s09",
+   "type": "single",
+   "question": "What does the accidental death benefit rider cost per year?",
+   "gold": "8.40",
+   "graph_field": "rider_annual_premium",
+   "graph_answer": "8.40",
+   "outcome": "correct",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "s10",
+   "type": "single",
+   "question": "When does the accidental death benefit rider terminate?",
+   "gold": "2061-08-01",
+   "graph_field": "rider_annual_premium",
+   "graph_answer": "8.40",
+   "outcome": "wrong",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "s11",
+   "type": "single",
+   "question": "What is the minimum paid-up life insurance amount?",
+   "gold": "1000.00",
+   "graph_field": "min_paidup_amount",
+   "graph_answer": "1000.00",
+   "outcome": "correct",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "s12",
+   "type": "single",
+   "question": "How often is the premium deducted from the employee's pay?",
+   "gold": "Semi-Monthly",
+   "graph_field": "premium_frequency",
+   "graph_answer": "Monthly",
+   "outcome": "wrong",
+   "evidence_matches_gold_page": false,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "s13",
+   "type": "single",
+   "question": "How much is deducted from each paycheck?",
+   "gold": "5.70",
+   "graph_field": null,
+   "graph_answer": null,
+   "outcome": "abstained",
+   "evidence_matches_gold_page": null,
+   "why": "no field matches the question (best score 0.0)"
+  },
+  {
+   "id": "s14",
+   "type": "single",
+   "question": "In which city does the employee live?",
+   "gold": "salem",
+   "graph_field": "ee_city",
+   "graph_answer": "salem",
+   "outcome": "correct",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "s15",
+   "type": "single",
+   "question": "When was the employee hired?",
+   "gold": "2019-07-15",
+   "graph_field": "ee_zip",
+   "graph_answer": "97305",
+   "outcome": "wrong",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "s16",
+   "type": "single",
+   "question": "Who presented the group insurance proposal?",
+   "gold": "casey",
+   "graph_field": "presented_by",
+   "graph_answer": "casey",
+   "outcome": "correct",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "s17",
+   "type": "single",
+   "question": "What is the situs state of the group policy?",
+   "gold": "OR",
+   "graph_field": "situs_state",
+   "graph_answer": "OR",
+   "outcome": "correct",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "s18",
+   "type": "single",
+   "question": "How many employees are eligible for the plan?",
+   "gold": "27",
+   "graph_field": "eligible_employees",
+   "graph_answer": "27",
+   "outcome": "correct",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "s19",
+   "type": "single",
+   "question": "What effective date was proposed in the master application?",
+   "gold": "2023-02-01",
+   "graph_field": "proposed_effective_date",
+   "graph_answer": null,
+   "outcome": "abstained",
+   "evidence_matches_gold_page": null,
+   "why": "no verified value for this field in the graph"
+  },
+  {
+   "id": "s20",
+   "type": "single",
+   "question": "What is the group policyholder's street address?",
+   "gold": "1000 broker way",
+   "graph_field": "group_street",
+   "graph_answer": "1000 broker way",
+   "outcome": "correct",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "s21",
+   "type": "single",
+   "question": "On what date was the master application signed?",
+   "gold": "2022-12-20",
+   "graph_field": "proposed_effective_date",
+   "graph_answer": null,
+   "outcome": "abstained",
+   "evidence_matches_gold_page": null,
+   "why": "no verified value for this field in the graph"
+  },
+  {
+   "id": "s22",
+   "type": "single",
+   "question": "What is the name of the group in the proposal?",
+   "gold": "quest",
+   "graph_field": "group_name",
+   "graph_answer": "quest",
+   "outcome": "correct",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "m01",
+   "type": "multi",
+   "question": "What is the total annual premium, including the rider?",
+   "gold": "136.80",
+   "graph_field": "rider_annual_premium",
+   "graph_answer": "8.40",
+   "outcome": "wrong",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "m02",
+   "type": "multi",
+   "question": "Do the payroll deductions over a year add up to the total annual premium?",
+   "gold": "yes",
+   "graph_field": "annual_premium",
+   "graph_answer": "128.40",
+   "outcome": "wrong",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "m03",
+   "type": "multi",
+   "question": "How old was the insured on the certificate date?",
+   "gold": "28",
+   "graph_field": "certificate_date",
+   "graph_answer": "2022-08-01",
+   "outcome": "wrong",
+   "evidence_matches_gold_page": true,
+   "why": "4 evidence page(s)"
+  },
+  {
+   "id": "m04",
+   "type": "multi",
+   "question": "Does the employee live in the same state as the group's situs state?",
+   "gold": "yes",
+   "graph_field": "situs_state",
+   "graph_answer": "OR",
+   "outcome": "wrong",
+   "evidence_matches_gold_page": true,
+   "why": "1 evidence page(s)"
+  },
+  {
+   "id": "m05",
+   "type": "multi",
+   "question": "How many years after the certificate date does the rider end?",
+   "gold": "39",
+   "graph_field": "certificate_date",
+   "graph_answer": "2022-08-01",
+   "outcome": "wrong",
+   "evidence_matches_gold_page": true,
+   "why": "4 evidence page(s)"
+  },
+  {
+   "id": "u01",
+   "type": "unanswerable",
+   "question": "What is the insured's name?",
+   "gold": null,
+   "graph_field": "insured_name",
+   "graph_answer": null,
+   "outcome": "abstained_correct",
+   "evidence_matches_gold_page": null,
+   "why": "no verified value for this field in the graph"
+  },
+  {
+   "id": "u02",
+   "type": "unanswerable",
+   "question": "What is the certificate number?",
+   "gold": null,
+   "graph_field": "certificate_number",
+   "graph_answer": null,
+   "outcome": "abstained_correct",
+   "evidence_matches_gold_page": null,
+   "why": "no verified value for this field in the graph"
+  },
+  {
+   "id": "u03",
+   "type": "unanswerable",
+   "question": "What is the employee's job title?",
+   "gold": null,
+   "graph_field": "job_title",
+   "graph_answer": null,
+   "outcome": "abstained_correct",
+   "evidence_matches_gold_page": null,
+   "why": "no verified value for this field in the graph"
+  },
+  {
+   "id": "u04",
+   "type": "unanswerable",
+   "question": "What is the group number?",
+   "gold": null,
+   "graph_field": "group_number",
+   "graph_answer": null,
+   "outcome": "abstained_correct",
+   "evidence_matches_gold_page": null,
+   "why": "no verified value for this field in the graph"
+  }
+ ],
+ "set": "draft",
+ "note": "Draft question set written by one person; the field descriptions were written from the form labels, not the questions.",
+ "graph_answers_by_matcher": {
+  "bm25": {
+   "single": {
+    "correct": 15,
+    "wrong": 4,
+    "abstained": 3
+   },
+   "all": {
+    "correct": 15,
+    "wrong": 9,
+    "abstained": 3,
+    "abstained_correct": 4
+   },
+   "multi": {
+    "wrong": 5
+   },
+   "unanswerable": {
+    "abstained_correct": 4
+   }
+  },
+  "dense": {
+   "single": {
+    "abstained": 3,
+    "correct": 16,
+    "wrong": 3
+   },
+   "all": {
+    "abstained": 3,
+    "correct": 16,
+    "wrong": 8,
+    "abstained_correct": 4
+   },
+   "multi": {
+    "wrong": 5
+   },
+   "unanswerable": {
+    "abstained_correct": 4
+   }
+  },
+  "llm router": {
+   "single": {
+    "correct": 19,
+    "abstained": 2,
+    "wrong": 1
+   },
+   "all": {
+    "correct": 20,
+    "abstained": 3,
+    "wrong": 4,
+    "abstained_correct": 4
+   },
+   "multi": {
+    "wrong": 3,
+    "abstained": 1,
+    "correct": 1
+   },
+   "unanswerable": {
+    "abstained_correct": 4
+   }
+  }
+ },
+ "per_question_by_matcher": {
+  "dense": {
+   "s01": {
+    "field": "certificate_number",
+    "answer": null,
+    "outcome": "abstained"
+   },
+   "s02": {
+    "field": "certificate_date",
+    "answer": "2022-08-01",
+    "outcome": "correct"
+   },
+   "s03": {
+    "field": "date_of_birth",
+    "answer": "1994-03-16",
+    "outcome": "correct"
+   },
+   "s04": {
+    "field": "issue_age",
+    "answer": "28",
+    "outcome": "correct"
+   },
+   "s05": {
+    "field": "maturity_date",
+    "answer": "2115-08-01",
+    "outcome": "correct"
+   },
+   "s06": {
+    "field": "risk_class",
+    "answer": "non-tobacco",
+    "outcome": "correct"
+   },
+   "s07": {
+    "field": "loan_interest_rate",
+    "answer": "8",
+    "outcome": "correct"
+   },
+   "s08": {
+    "field": "annual_premium",
+    "answer": "128.40",
+    "outcome": "correct"
+   },
+   "s09": {
+    "field": "rider_annual_premium",
+    "answer": "8.40",
+    "outcome": "correct"
+   },
+   "s10": {
+    "field": "rider_annual_premium",
+    "answer": "8.40",
+    "outcome": "wrong"
+   },
+   "s11": {
+    "field": "min_paidup_amount",
+    "answer": "1000.00",
+    "outcome": "correct"
+   },
+   "s12": {
+    "field": "payroll_frequency",
+    "answer": "Semi-Monthly",
+    "outcome": "correct"
+   },
+   "s13": {
+    "field": "payroll_deduction_amount",
+    "answer": "5.70",
+    "outcome": "correct"
+   },
+   "s14": {
+    "field": "ee_city",
+    "answer": "salem",
+    "outcome": "correct"
+   },
+   "s15": {
+    "field": "date_of_hire",
+    "answer": "2019-07-15",
+    "outcome": "correct"
+   },
+   "s16": {
+    "field": "group_name",
+    "answer": "quest",
+    "outcome": "wrong"
+   },
+   "s17": {
+    "field": "group_state",
+    "answer": "OR",
+    "outcome": "correct"
+   },
+   "s18": {
+    "field": "eligible_employees",
+    "answer": "27",
+    "outcome": "correct"
+   },
+   "s19": {
+    "field": "proposed_effective_date",
+    "answer": null,
+    "outcome": "abstained"
+   },
+   "s20": {
+    "field": "group_street",
+    "answer": "1000 broker way",
+    "outcome": "correct"
+   },
+   "s21": {
+    "field": "proposed_effective_date",
+    "answer": null,
+    "outcome": "abstained"
+   },
+   "s22": {
+    "field": "presented_by",
+    "answer": "casey",
+    "outcome": "wrong"
+   },
+   "m01": {
+    "field": "annual_premium",
+    "answer": "128.40",
+    "outcome": "wrong"
+   },
+   "m02": {
+    "field": "payroll_deduction_amount",
+    "answer": "5.70",
+    "outcome": "wrong"
+   },
+   "m03": {
+    "field": "date_of_birth",
+    "answer": "1994-03-16",
+    "outcome": "wrong"
+   },
+   "m04": {
+    "field": "ee_state",
+    "answer": "OR",
+    "outcome": "wrong"
+   },
+   "m05": {
+    "field": "rider_termination_date",
+    "answer": "2061-08-01",
+    "outcome": "wrong"
+   },
+   "u01": {
+    "field": "insured_name",
+    "answer": null,
+    "outcome": "abstained_correct"
+   },
+   "u02": {
+    "field": "certificate_number",
+    "answer": null,
+    "outcome": "abstained_correct"
+   },
+   "u03": {
+    "field": "job_title",
+    "answer": null,
+    "outcome": "abstained_correct"
+   },
+   "u04": {
+    "field": "group_number",
+    "answer": null,
+    "outcome": "abstained_correct"
+   }
+  },
+  "llm router": {
+   "s01": {
+    "field": "face_amount",
+    "answer": "10000.00",
+    "outcome": "correct"
+   },
+   "s02": {
+    "field": "certificate_date",
+    "answer": "2022-08-01",
+    "outcome": "correct"
+   },
+   "s03": {
+    "field": "date_of_birth",
+    "answer": "1994-03-16",
+    "outcome": "correct"
+   },
+   "s04": {
+    "field": "issue_age",
+    "answer": "28",
+    "outcome": "correct"
+   },
+   "s05": {
+    "field": "maturity_date",
+    "answer": "2115-08-01",
+    "outcome": "correct"
+   },
+   "s06": {
+    "field": "risk_class",
+    "answer": "non-tobacco",
+    "outcome": "correct"
+   },
+   "s07": {
+    "field": "loan_interest_rate",
+    "answer": "8",
+    "outcome": "correct"
+   },
+   "s08": {
+    "field": "annual_premium",
+    "answer": "128.40",
+    "outcome": "correct"
+   },
+   "s09": {
+    "field": "rider_annual_premium",
+    "answer": "8.40",
+    "outcome": "correct"
+   },
+   "s10": {
+    "field": "rider_termination_date",
+    "answer": "2061-08-01",
+    "outcome": "correct"
+   },
+   "s11": {
+    "field": "min_paidup_amount",
+    "answer": "1000.00",
+    "outcome": "correct"
+   },
+   "s12": {
+    "field": "payroll_frequency",
+    "answer": "Semi-Monthly",
+    "outcome": "correct"
+   },
+   "s13": {
+    "field": "payroll_deduction_amount",
+    "answer": "5.70",
+    "outcome": "correct"
+   },
+   "s14": {
+    "field": "ee_city",
+    "answer": "salem",
+    "outcome": "correct"
+   },
+   "s15": {
+    "field": "date_of_hire",
+    "answer": "2019-07-15",
+    "outcome": "correct"
+   },
+   "s16": {
+    "field": "presented_by",
+    "answer": "casey",
+    "outcome": "correct"
+   },
+   "s17": {
+    "field": "situs_state",
+    "answer": "OR",
+    "outcome": "correct"
+   },
+   "s18": {
+    "field": "eligible_employees",
+    "answer": "27",
+    "outcome": "correct"
+   },
+   "s19": {
+    "field": "proposed_effective_date",
+    "answer": null,
+    "outcome": "abstained"
+   },
+   "s20": {
+    "field": "group_street",
+    "answer": "1000 broker way",
+    "outcome": "correct"
+   },
+   "s21": {
+    "field": "signature_date",
+    "answer": null,
+    "outcome": "abstained"
+   },
+   "s22": {
+    "field": "presented_by",
+    "answer": "casey",
+    "outcome": "wrong"
+   },
+   "m01": {
+    "field": "annual_premium",
+    "answer": "128.40",
+    "outcome": "wrong"
+   },
+   "m02": {
+    "field": null,
+    "answer": null,
+    "outcome": "abstained"
+   },
+   "m03": {
+    "field": "issue_age",
+    "answer": "28",
+    "outcome": "correct"
+   },
+   "m04": {
+    "field": "ee_state",
+    "answer": "OR",
+    "outcome": "wrong"
+   },
+   "m05": {
+    "field": "rider_termination_date",
+    "answer": "2061-08-01",
+    "outcome": "wrong"
+   },
+   "u01": {
+    "field": "insured_name",
+    "answer": null,
+    "outcome": "abstained_correct"
+   },
+   "u02": {
+    "field": "certificate_number",
+    "answer": null,
+    "outcome": "abstained_correct"
+   },
+   "u03": {
+    "field": "job_title",
+    "answer": null,
+    "outcome": "abstained_correct"
+   },
+   "u04": {
+    "field": "group_number",
+    "answer": null,
+    "outcome": "abstained_correct"
+   }
+  }
+ },
+ "llm_answers": {
+  "single": {
+   "correct": 21,
+   "abstained": 1
+  },
+  "all": {
+   "correct": 25,
+   "abstained": 1,
+   "wrong": 1,
+   "abstained_correct": 4
+  },
+  "multi": {
+   "correct": 4,
+   "wrong": 1
+  },
+  "unanswerable": {
+   "abstained_correct": 4
+  }
+ }
+}
