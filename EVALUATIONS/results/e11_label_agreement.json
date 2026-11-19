@@ -1,0 +1,18 @@
+{
+ "items_in_first_pass": 50,
+ "items_labeled_by_both": 50,
+ "has_value_agreement": 1.0,
+ "has_value_kappa": 1.0,
+ "both_gave_a_value": 32,
+ "same_value": 31,
+ "value_agreement": 0.969,
+ "overall_agreement": 0.98,
+ "disagreements": [
+  {
+   "doc": "certificate",
+   "field": "payroll_frequency",
+   "first": "Semi-Monthly",
+   "second": "$5.70"
+  }
+ ]
+}

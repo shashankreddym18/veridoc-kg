@@ -1,0 +1,314 @@
+@prefix ex: <http://veridoc.example/onto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex: a owl:Ontology ;
+    rdfs:label "VeriDoc-KG worksite insurance ontology" .
+
+ex:annual_premium a owl:DatatypeProperty ;
+    rdfs:label "Annual Certificate Premium (excluding Riders)" ;
+    rdfs:domain ex:Certificate ;
+    rdfs:range xsd:decimal .
+
+ex:annual_salary a owl:DatatypeProperty ;
+    rdfs:label "Annual Salary/Compensation" ;
+    rdfs:domain ex:Insured ;
+    rdfs:range xsd:decimal .
+
+ex:bbox a owl:DatatypeProperty ;
+    rdfs:comment "Bounding box [x0, y0, x1, y1] in PDF points, as JSON." ;
+    rdfs:domain ex:Evidence ;
+    rdfs:range xsd:string .
+
+ex:certificate_date a owl:DatatypeProperty ;
+    rdfs:label "Certificate Date" ;
+    rdfs:domain ex:Certificate ;
+    rdfs:range xsd:date .
+
+ex:certificate_number a owl:DatatypeProperty ;
+    rdfs:label "Certificate Number" ;
+    rdfs:domain ex:Certificate ;
+    rdfs:range xsd:string .
+
+ex:date_of_birth a owl:DatatypeProperty ;
+    rdfs:label "Date of Birth" ;
+    rdfs:domain ex:Insured ;
+    rdfs:range xsd:date .
+
+ex:date_of_hire a owl:DatatypeProperty ;
+    rdfs:label "Date of Hire" ;
+    rdfs:domain ex:Insured ;
+    rdfs:range xsd:date .
+
+ex:doc a owl:ObjectProperty ;
+    rdfs:comment "The document the evidence is on." ;
+    rdfs:domain ex:Evidence ;
+    rdfs:range ex:Document .
+
+ex:ee_city a owl:DatatypeProperty ;
+    rdfs:label "City" ;
+    rdfs:domain ex:Insured ;
+    rdfs:range xsd:string .
+
+ex:ee_state a owl:DatatypeProperty ;
+    rdfs:label "State" ;
+    rdfs:domain ex:Insured ;
+    rdfs:range xsd:string .
+
+ex:ee_zip a owl:DatatypeProperty ;
+    rdfs:label "Zip Code" ;
+    rdfs:domain ex:Insured ;
+    rdfs:range xsd:string .
+
+ex:eligible_employees a owl:DatatypeProperty ;
+    rdfs:label "Number of eligible employees/members" ;
+    rdfs:domain ex:Group ;
+    rdfs:range xsd:integer .
+
+ex:face_amount a owl:DatatypeProperty ;
+    rdfs:label "Face Amount" ;
+    rdfs:domain ex:Certificate ;
+    rdfs:range xsd:decimal .
+
+ex:group_name a owl:DatatypeProperty ;
+    rdfs:label "Group Name / Group Policyholder" ;
+    rdfs:domain ex:Group ;
+    rdfs:range xsd:string .
+
+ex:group_number a owl:DatatypeProperty ;
+    rdfs:label "Group Number" ;
+    rdfs:domain ex:Group ;
+    rdfs:range xsd:string .
+
+ex:group_state a owl:DatatypeProperty ;
+    rdfs:label "State or Country" ;
+    rdfs:domain ex:Group ;
+    rdfs:range xsd:string .
+
+ex:group_street a owl:DatatypeProperty ;
+    rdfs:label "PO Box or Street" ;
+    rdfs:domain ex:Group ;
+    rdfs:range xsd:string .
+
+ex:has_rider a owl:ObjectProperty ;
+    rdfs:domain ex:Certificate ;
+    rdfs:range ex:Rider .
+
+ex:insured_name a owl:DatatypeProperty ;
+    rdfs:label "Insured" ;
+    rdfs:domain ex:Insured ;
+    rdfs:range xsd:string .
+
+ex:insures a owl:ObjectProperty ;
+    rdfs:domain ex:Certificate ;
+    rdfs:range ex:Insured .
+
+ex:issue_age a owl:DatatypeProperty ;
+    rdfs:label "Issue Age" ;
+    rdfs:domain ex:Insured ;
+    rdfs:range xsd:integer .
+
+ex:issued_under a owl:ObjectProperty ;
+    rdfs:domain ex:Certificate ;
+    rdfs:range ex:Group .
+
+ex:job_title a owl:DatatypeProperty ;
+    rdfs:label "Job Title/Occupation" ;
+    rdfs:domain ex:Insured ;
+    rdfs:range xsd:string .
+
+ex:key_basis a owl:DatatypeProperty ;
+    rdfs:comment "Which key rule built canonical_key (e.g. group_number, name+state, certificate_number)." ;
+    rdfs:domain ex:KeyedEntity ;
+    rdfs:range xsd:string .
+
+ex:loan_interest_rate a owl:DatatypeProperty ;
+    rdfs:label "Loan Interest Rate" ;
+    rdfs:domain ex:Certificate ;
+    rdfs:range xsd:decimal .
+
+ex:maturity_date a owl:DatatypeProperty ;
+    rdfs:label "Maturity Date" ;
+    rdfs:domain ex:Certificate ;
+    rdfs:range xsd:date .
+
+ex:min_paidup_amount a owl:DatatypeProperty ;
+    rdfs:label "Minimum Paid-Up Life Insurance Amount" ;
+    rdfs:domain ex:Certificate ;
+    rdfs:range xsd:decimal .
+
+ex:page a owl:DatatypeProperty ;
+    rdfs:comment "1-based page number." ;
+    rdfs:domain ex:Evidence ;
+    rdfs:range xsd:integer .
+
+ex:payroll_deduction_amount a owl:DatatypeProperty ;
+    rdfs:label "Your <frequency> Premium (amount)" ;
+    rdfs:domain ex:Certificate ;
+    rdfs:range xsd:decimal .
+
+ex:payroll_frequency a owl:DatatypeProperty ;
+    rdfs:label "Your <frequency> Premium" ;
+    rdfs:domain ex:Certificate ;
+    rdfs:range xsd:string .
+
+ex:plan a owl:DatatypeProperty ;
+    rdfs:label "Plan" ;
+    rdfs:domain ex:Certificate ;
+    rdfs:range xsd:string .
+
+ex:precedes a owl:ObjectProperty ;
+    rdfs:comment "Order of the workflow stages." ;
+    rdfs:domain ex:WorkflowStage ;
+    rdfs:range ex:WorkflowStage .
+
+ex:premium_frequency a owl:DatatypeProperty ;
+    rdfs:label "Initial Premium Payment Frequency" ;
+    rdfs:domain ex:Certificate ;
+    rdfs:range xsd:string .
+
+ex:presented_by a owl:DatatypeProperty ;
+    rdfs:label "Presented By" ;
+    rdfs:domain ex:Group ;
+    rdfs:range xsd:string .
+
+ex:produced_at a owl:ObjectProperty ;
+    rdfs:comment "The workflow stage that produces this document." ;
+    rdfs:domain ex:Document ;
+    rdfs:range ex:WorkflowStage .
+
+ex:proposal_date a owl:DatatypeProperty ;
+    rdfs:label "Date (proposal cover)" ;
+    rdfs:domain ex:Group ;
+    rdfs:range xsd:date .
+
+ex:proposed_effective_date a owl:DatatypeProperty ;
+    rdfs:label "Proposed effective date" ;
+    rdfs:domain ex:Group ;
+    rdfs:range xsd:date .
+
+ex:rider_annual_premium a owl:DatatypeProperty ;
+    rdfs:label "Annual Premium (rider)" ;
+    rdfs:domain ex:Rider ;
+    rdfs:range xsd:decimal .
+
+ex:rider_benefit_amount a owl:DatatypeProperty ;
+    rdfs:label "Benefit Amount" ;
+    rdfs:domain ex:Rider ;
+    rdfs:range xsd:decimal .
+
+ex:rider_date a owl:DatatypeProperty ;
+    rdfs:label "Rider Date" ;
+    rdfs:domain ex:Rider ;
+    rdfs:range xsd:date .
+
+ex:rider_termination_date a owl:DatatypeProperty ;
+    rdfs:label "Termination Date" ;
+    rdfs:domain ex:Rider ;
+    rdfs:range xsd:date .
+
+ex:risk_class a owl:DatatypeProperty ;
+    rdfs:label "Risk Class" ;
+    rdfs:domain ex:Certificate ;
+    rdfs:range xsd:string .
+
+ex:signature_date a owl:DatatypeProperty ;
+    rdfs:label "Date (signature block)" ;
+    rdfs:domain ex:Group ;
+    rdfs:range xsd:date .
+
+ex:situs_state a owl:DatatypeProperty ;
+    rdfs:label "Situs State" ;
+    rdfs:domain ex:Group ;
+    rdfs:range xsd:string .
+
+ex:span a owl:DatatypeProperty ;
+    rdfs:comment "The evidence text as read from the page." ;
+    rdfs:domain ex:Evidence ;
+    rdfs:range xsd:string .
+
+ex:status a owl:DatatypeProperty ;
+    rdfs:comment "verified (every check passed) or human_verified (restored by a reviewer)." ;
+    rdfs:domain ex:Evidence ;
+    rdfs:range xsd:string .
+
+ex:supports_entity a owl:ObjectProperty ;
+    rdfs:comment "The individual whose property this evidence supports." ;
+    rdfs:domain ex:Evidence .
+
+ex:supports_field a owl:DatatypeProperty ;
+    rdfs:comment "Name of the property this evidence supports." ;
+    rdfs:domain ex:Evidence ;
+    rdfs:range xsd:string .
+
+ex:title a owl:DatatypeProperty ;
+    rdfs:domain ex:Document ;
+    rdfs:range xsd:string .
+
+ex:Document a owl:Class ;
+    rdfs:label "Document" ;
+    rdfs:comment "A source PDF of the case." ;
+    owl:disjointWith ex:Evidence,
+        ex:Group,
+        ex:Insured,
+        ex:Rider,
+        ex:WorkflowStage .
+
+ex:canonical_key a owl:DatatypeProperty ;
+    rdfs:comment "Deterministic identity of the entity, built from canonical field values by fixed rules (veridoc/keys.py)." ;
+    rdfs:domain ex:KeyedEntity ;
+    rdfs:range xsd:string .
+
+ex:KeyedEntity a owl:Class ;
+    rdfs:comment "An entity that can carry a canonical key: Group, Insured, Certificate or Rider." .
+
+ex:Evidence a owl:Class ;
+    rdfs:label "Evidence" ;
+    rdfs:comment "The place on a page that supports one property value: document, page, bounding box and text span." ;
+    owl:disjointWith ex:Group,
+        ex:Insured,
+        ex:Rider,
+        ex:WorkflowStage .
+
+ex:WorkflowStage a owl:Class ;
+    rdfs:label "WorkflowStage" ;
+    rdfs:comment "A stage of the worksite workflow that produces a document (quote, master application, enrollment, policy, certificate)." .
+
+ex:Rider a owl:Class ;
+    rdfs:label "Rider" ;
+    rdfs:comment "An optional benefit attached to a certificate (here: accidental death benefit)." ;
+    rdfs:subClassOf ex:KeyedEntity ;
+    owl:disjointWith ex:WorkflowStage ;
+    owl:hasKey ( ex:canonical_key ) .
+
+ex:Group a owl:Class ;
+    rdfs:label "Group" ;
+    rdfs:comment "The employer (group policyholder) that sponsors the worksite plan." ;
+    rdfs:subClassOf ex:KeyedEntity ;
+    owl:disjointWith ex:Insured,
+        ex:Rider,
+        ex:WorkflowStage ;
+    owl:hasKey ( ex:canonical_key ) .
+
+ex:Insured a owl:Class ;
+    rdfs:label "Insured" ;
+    rdfs:comment "The employee covered by a certificate." ;
+    rdfs:subClassOf ex:KeyedEntity ;
+    owl:disjointWith ex:Rider,
+        ex:WorkflowStage ;
+    owl:hasKey ( ex:canonical_key ) .
+
+ex:Certificate a owl:Class ;
+    rdfs:label "Certificate" ;
+    rdfs:comment "One employee's certificate of coverage under the group policy." ;
+    rdfs:subClassOf ex:KeyedEntity ;
+    owl:disjointWith ex:Document,
+        ex:Evidence,
+        ex:Group,
+        ex:Insured,
+        ex:Rider,
+        ex:WorkflowStage ;
+    owl:hasKey ( ex:canonical_key ) .
+

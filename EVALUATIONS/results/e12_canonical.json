@@ -1,0 +1,169 @@
+{
+ "_note": "E12: cross-document agreement under surface variation (deterministic canonical forms vs similarity).",
+ "pairs": 640,
+ "summary": {
+  "surface": {
+   "false_conflict_rate": 0.74,
+   "missed_conflict_rate": 0.0,
+   "false_conflicts": 296,
+   "missed_conflicts": 0,
+   "same_pairs": 400,
+   "different_pairs": 240
+  },
+  "fuzzy": {
+   "false_conflict_rate": 0.03,
+   "missed_conflict_rate": 0.333,
+   "false_conflicts": 12,
+   "missed_conflicts": 80,
+   "same_pairs": 400,
+   "different_pairs": 240
+  },
+  "canonical": {
+   "false_conflict_rate": 0.0,
+   "missed_conflict_rate": 0.0,
+   "false_conflicts": 0,
+   "missed_conflicts": 0,
+   "same_pairs": 400,
+   "different_pairs": 240
+  }
+ },
+ "by_field": {
+  "surface": {
+   "group_name": {
+    "same_pairs": 60,
+    "false_conflict": 52,
+    "different_pairs": 60,
+    "missed_conflict": 0
+   },
+   "date_of_birth": {
+    "same_pairs": 60,
+    "false_conflict": 60
+   },
+   "date_of_hire": {
+    "same_pairs": 60,
+    "false_conflict": 59
+   },
+   "face_amount": {
+    "same_pairs": 60,
+    "false_conflict": 60,
+    "different_pairs": 60,
+    "missed_conflict": 0
+   },
+   "annual_premium": {
+    "same_pairs": 60,
+    "false_conflict": 43,
+    "different_pairs": 60,
+    "missed_conflict": 0
+   },
+   "ee_state": {
+    "same_pairs": 40,
+    "false_conflict": 22,
+    "different_pairs": 60,
+    "missed_conflict": 0
+   },
+   "payroll_frequency": {
+    "same_pairs": 60,
+    "false_conflict": 0
+   }
+  },
+  "fuzzy": {
+   "group_name": {
+    "same_pairs": 60,
+    "false_conflict": 12,
+    "different_pairs": 60,
+    "missed_conflict": 39
+   },
+   "date_of_birth": {
+    "same_pairs": 60,
+    "false_conflict": 0
+   },
+   "date_of_hire": {
+    "same_pairs": 60,
+    "false_conflict": 0
+   },
+   "face_amount": {
+    "same_pairs": 60,
+    "false_conflict": 0,
+    "different_pairs": 60,
+    "missed_conflict": 40
+   },
+   "annual_premium": {
+    "same_pairs": 60,
+    "false_conflict": 0,
+    "different_pairs": 60,
+    "missed_conflict": 1
+   },
+   "ee_state": {
+    "same_pairs": 40,
+    "false_conflict": 0,
+    "different_pairs": 60,
+    "missed_conflict": 0
+   },
+   "payroll_frequency": {
+    "same_pairs": 60,
+    "false_conflict": 0
+   }
+  },
+  "canonical": {
+   "group_name": {
+    "same_pairs": 60,
+    "false_conflict": 0,
+    "different_pairs": 60,
+    "missed_conflict": 0
+   },
+   "date_of_birth": {
+    "same_pairs": 60,
+    "false_conflict": 0
+   },
+   "date_of_hire": {
+    "same_pairs": 60,
+    "false_conflict": 0
+   },
+   "face_amount": {
+    "same_pairs": 60,
+    "false_conflict": 0,
+    "different_pairs": 60,
+    "missed_conflict": 0
+   },
+   "annual_premium": {
+    "same_pairs": 60,
+    "false_conflict": 0,
+    "different_pairs": 60,
+    "missed_conflict": 0
+   },
+   "ee_state": {
+    "same_pairs": 40,
+    "false_conflict": 0,
+    "different_pairs": 60,
+    "missed_conflict": 0
+   },
+   "payroll_frequency": {
+    "same_pairs": 60,
+    "false_conflict": 0
+   }
+  }
+ },
+ "errors_sample": {
+  "surface": [
+   "group_name: 'IRONWOOD MANUFACTURING INC' vs 'Ironwood Manufacturing, Inc.' (same)",
+   "date_of_birth: 'July 26, 1998' vs '7/26/1998' (same)",
+   "date_of_hire: 'Apr. 20, 2022' vs '04/20/2022' (same)",
+   "face_amount: '20,000.00' vs '$ 20,000.00' (same)",
+   "group_name: 'Bluewater Credit Union Inc' vs 'The Bluewater Credit Union LLC' (same)",
+   "date_of_birth: 'Nov. 23, 1998' vs '11/23/1998' (same)",
+   "date_of_hire: '05/15/2009' vs 'May 15 2009' (same)",
+   "face_amount: '$10000.00' vs '$10,000' (same)"
+  ],
+  "fuzzy": [
+   "group_name: 'The Ironwood Manufacturing LLC' vs 'Ironwood' (different)",
+   "group_name: 'Bluewater Credit Union, Inc.' vs 'Bluewater' (different)",
+   "face_amount: '$ 10,000.00' vs '$ 100,000.00' (different)",
+   "face_amount: '$50,000.00' vs '$5,000' (different)",
+   "face_amount: '$10,000.00' vs '$1000.00' (different)",
+   "group_name: 'HARBOR POINT HOTELS GROUP' vs 'The Harbor Point Hotels Group Holdings LLC' (different)",
+   "face_amount: '50,000.00' vs '$5,000.00' (different)",
+   "group_name: 'Summit Ridge Schools Group, Inc.' vs 'Summit Ridge Schools Group' (same)"
+  ],
+  "canonical": []
+ }
+}

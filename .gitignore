@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.DS_Store
+# course-provided documents and everything generated from them (see README, "Data note")
+DATA/raw/
+DATA/processed/
+.venv/
+venv/
+# synthetic forms are regenerated from the seed; only gold.json is committed
+DATA/synthetic/*/forms/
+DATA/synthetic/*/pages/
+DATA/synthetic/*/images/
+DATA/synthetic/*/facts_llm.json
+DATA/synthetic/crf.pkl

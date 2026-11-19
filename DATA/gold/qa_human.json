@@ -1,0 +1,459 @@
+{
+ "_status": "Questions of qa_gold_draft.json reworded by a team member (not the person who wrote them). Answers and evidence pages are unchanged.",
+ "questions": [
+  {
+   "id": "s01",
+   "type": "single",
+   "question": "How much is the coverage for?",
+   "answer": "10000.00",
+   "evidence": [
+    [
+     "certificate",
+     5
+    ]
+   ],
+   "field": "face_amount",
+   "original": "What is the face amount of the employee's certificate?",
+   "reworded": true
+  },
+  {
+   "id": "s02",
+   "type": "single",
+   "question": "What is the start date on the certificate?",
+   "answer": "2022-08-01",
+   "evidence": [
+    [
+     "certificate",
+     5
+    ]
+   ],
+   "field": "certificate_date",
+   "original": "What is the certificate date?",
+   "reworded": true
+  },
+  {
+   "id": "s03",
+   "type": "single",
+   "question": "What is their birthday?",
+   "answer": "1994-03-16",
+   "evidence": [
+    [
+     "certificate",
+     5
+    ]
+   ],
+   "field": "date_of_birth",
+   "original": "What is the insured's date of birth?",
+   "reworded": true
+  },
+  {
+   "id": "s04",
+   "type": "single",
+   "question": "What age is listed for when they got the policy?",
+   "answer": "28",
+   "evidence": [
+    [
+     "certificate",
+     5
+    ]
+   ],
+   "field": "issue_age",
+   "original": "What was the insured's issue age?",
+   "reworded": true
+  },
+  {
+   "id": "s05",
+   "type": "single",
+   "question": "When does the policy expire or pay out?",
+   "answer": "2115-08-01",
+   "evidence": [
+    [
+     "certificate",
+     5
+    ]
+   ],
+   "field": "maturity_date",
+   "original": "When does the certificate mature?",
+   "reworded": true
+  },
+  {
+   "id": "s06",
+   "type": "single",
+   "question": "What health or risk group are they in?",
+   "answer": "non-tobacco",
+   "evidence": [
+    [
+     "certificate",
+     5
+    ]
+   ],
+   "field": "risk_class",
+   "original": "What risk class is the insured in?",
+   "reworded": true
+  },
+  {
+   "id": "s07",
+   "type": "single",
+   "question": "What is the interest rate if they take out a loan on it?",
+   "answer": "8",
+   "evidence": [
+    [
+     "certificate",
+     5
+    ]
+   ],
+   "field": "loan_interest_rate",
+   "original": "What is the loan interest rate on the certificate?",
+   "reworded": true
+  },
+  {
+   "id": "s08",
+   "type": "single",
+   "question": "How much does the basic plan cost per year?",
+   "answer": "128.40",
+   "evidence": [
+    [
+     "certificate",
+     5
+    ]
+   ],
+   "field": "annual_premium",
+   "original": "What is the annual certificate premium, excluding riders?",
+   "reworded": true
+  },
+  {
+   "id": "s09",
+   "type": "single",
+   "question": "How much extra is the accidental death add-on per year?",
+   "answer": "8.40",
+   "evidence": [
+    [
+     "certificate",
+     5
+    ]
+   ],
+   "field": "rider_annual_premium",
+   "original": "What does the accidental death benefit rider cost per year?",
+   "reworded": true
+  },
+  {
+   "id": "s10",
+   "type": "single",
+   "question": "When does the accidental death add-on end?",
+   "answer": "2061-08-01",
+   "evidence": [
+    [
+     "certificate",
+     5
+    ]
+   ],
+   "field": "rider_termination_date",
+   "original": "When does the accidental death benefit rider terminate?",
+   "reworded": true
+  },
+  {
+   "id": "s11",
+   "type": "single",
+   "question": "What is the lowest paid-up coverage amount allowed?",
+   "answer": "1000.00",
+   "evidence": [
+    [
+     "certificate",
+     5
+    ]
+   ],
+   "field": "min_paidup_amount",
+   "original": "What is the minimum paid-up life insurance amount?",
+   "reworded": true
+  },
+  {
+   "id": "s12",
+   "type": "single",
+   "question": "How often do they take the payment out of the paycheck?",
+   "answer": "Semi-Monthly",
+   "evidence": [
+    [
+     "certificate",
+     32
+    ]
+   ],
+   "field": "payroll_frequency",
+   "original": "How often is the premium deducted from the employee's pay?",
+   "reworded": true
+  },
+  {
+   "id": "s13",
+   "type": "single",
+   "question": "How much comes out of each paycheck?",
+   "answer": "5.70",
+   "evidence": [
+    [
+     "certificate",
+     32
+    ]
+   ],
+   "field": "payroll_deduction_amount",
+   "original": "How much is deducted from each paycheck?",
+   "reworded": true
+  },
+  {
+   "id": "s14",
+   "type": "single",
+   "question": "What city do they live in?",
+   "answer": "salem",
+   "evidence": [
+    [
+     "certificate",
+     31
+    ]
+   ],
+   "field": "ee_city",
+   "original": "In which city does the employee live?",
+   "reworded": true
+  },
+  {
+   "id": "s15",
+   "type": "single",
+   "question": "When were they hired?",
+   "answer": "2019-07-15",
+   "evidence": [
+    [
+     "certificate",
+     31
+    ]
+   ],
+   "field": "date_of_hire",
+   "original": "When was the employee hired?",
+   "reworded": true
+  },
+  {
+   "id": "s16",
+   "type": "single",
+   "question": "Who pitched this insurance plan?",
+   "answer": "casey",
+   "evidence": [
+    [
+     "proposal",
+     1
+    ]
+   ],
+   "field": "presented_by",
+   "original": "Who presented the group insurance proposal?",
+   "reworded": true
+  },
+  {
+   "id": "s17",
+   "type": "single",
+   "question": "What state was the group policy set up in?",
+   "answer": "OR",
+   "evidence": [
+    [
+     "proposal",
+     1
+    ]
+   ],
+   "field": "situs_state",
+   "original": "What is the situs state of the group policy?",
+   "reworded": true
+  },
+  {
+   "id": "s18",
+   "type": "single",
+   "question": "How many workers can join the plan?",
+   "answer": "27",
+   "evidence": [
+    [
+     "master_app",
+     1
+    ]
+   ],
+   "field": "eligible_employees",
+   "original": "How many employees are eligible for the plan?",
+   "reworded": true
+  },
+  {
+   "id": "s19",
+   "type": "single",
+   "question": "What start date did they ask for on the main form?",
+   "answer": "2023-02-01",
+   "evidence": [
+    [
+     "master_app",
+     1
+    ]
+   ],
+   "field": "proposed_effective_date",
+   "original": "What effective date was proposed in the master application?",
+   "reworded": true
+  },
+  {
+   "id": "s20",
+   "type": "single",
+   "question": "What is the company's street address?",
+   "answer": "1000 broker way",
+   "evidence": [
+    [
+     "master_app",
+     1
+    ]
+   ],
+   "field": "group_street",
+   "original": "What is the group policyholder's street address?",
+   "reworded": true
+  },
+  {
+   "id": "s21",
+   "type": "single",
+   "question": "When was the main form signed?",
+   "answer": "2022-12-20",
+   "evidence": [
+    [
+     "master_app",
+     3
+    ]
+   ],
+   "field": "signature_date",
+   "note": "The pipeline's only candidate for this field is 2/20/2022 (an OCR misreading), and it is quarantined.",
+   "original": "On what date was the master application signed?",
+   "reworded": true
+  },
+  {
+   "id": "s22",
+   "type": "single",
+   "question": "What company name is on the proposal?",
+   "answer": "quest",
+   "evidence": [
+    [
+     "proposal",
+     1
+    ]
+   ],
+   "field": "group_name",
+   "original": "What is the name of the group in the proposal?",
+   "reworded": true
+  },
+  {
+   "id": "m01",
+   "type": "multi",
+   "question": "What is the total yearly cost including the add-on?",
+   "answer": "136.80",
+   "evidence": [
+    [
+     "certificate",
+     5
+    ]
+   ],
+   "needs": [
+    "annual_premium",
+    "rider_annual_premium"
+   ],
+   "original": "What is the total annual premium, including the rider?",
+   "reworded": true
+  },
+  {
+   "id": "m02",
+   "type": "multi",
+   "question": "Do the paycheck payments for the whole year match the total yearly cost?",
+   "answer": "yes",
+   "evidence": [
+    [
+     "certificate",
+     5
+    ],
+    [
+     "certificate",
+     32
+    ]
+   ],
+   "needs": [
+    "payroll_deduction_amount",
+    "payroll_frequency",
+    "annual_premium",
+    "rider_annual_premium"
+   ],
+   "note": "5.70 x 24 = 136.80 = 128.40 + 8.40",
+   "original": "Do the payroll deductions over a year add up to the total annual premium?",
+   "reworded": true
+  },
+  {
+   "id": "m03",
+   "type": "multi",
+   "question": "How old were they on the day the policy started?",
+   "answer": "28",
+   "evidence": [
+    [
+     "certificate",
+     5
+    ]
+   ],
+   "needs": [
+    "date_of_birth",
+    "certificate_date"
+   ],
+   "original": "How old was the insured on the certificate date?",
+   "reworded": true
+  },
+  {
+   "id": "m04",
+   "type": "multi",
+   "question": "Do they live in the same state where the company's policy was set up?",
+   "answer": "yes",
+   "evidence": [
+    [
+     "certificate",
+     31
+    ],
+    [
+     "proposal",
+     1
+    ]
+   ],
+   "needs": [
+    "ee_state",
+    "situs_state"
+   ],
+   "original": "Does the employee live in the same state as the group's situs state?",
+   "reworded": true
+  },
+  {
+   "id": "m05",
+   "type": "multi",
+   "question": "How many years after the start date does the add-on end?",
+   "answer": "39",
+   "evidence": [
+    [
+     "certificate",
+     5
+    ]
+   ],
+   "needs": [
+    "certificate_date",
+    "rider_termination_date"
+   ],
+   "original": "How many years after the certificate date does the rider end?",
+   "reworded": true
+  },
+  {
+   "id": "u01",
+   "type": "unanswerable",
+   "question": "Whose name is on the policy?",
+   "answer": null,
+   "evidence": [],
+   "field": "insured_name",
+   "note": "Redacted in the de-identified certificate.",
+   "original": "What is the insured's name?",
+   "reworded": true
+  },
+  {
+   "id": "u03",
+   "type": "unanswerable",
+   "question": "What is their job title?",
+   "answer": null,
+   "evidence": [],
+   "field": "job_title",
+   "note": "Left blank on the application.",
+   "original": "What is the employee's job title?",
+   "reworded": true
+  }
+ ]
+}

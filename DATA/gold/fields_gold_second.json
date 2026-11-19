@@ -1,0 +1,302 @@
+{
+ "proposal|group_name": {
+  "doc": "proposal",
+  "field": "group_name",
+  "value": "Quest",
+  "normalized": "quest"
+ },
+ "proposal|presented_by": {
+  "doc": "proposal",
+  "field": "presented_by",
+  "value": "casey",
+  "normalized": "casey"
+ },
+ "proposal|proposal_date": {
+  "doc": "proposal",
+  "field": "proposal_date",
+  "value": "September 08, 2022",
+  "normalized": "2022-09-08"
+ },
+ "proposal|situs_state": {
+  "doc": "proposal",
+  "field": "situs_state",
+  "value": "Oregon",
+  "normalized": "OR"
+ },
+ "master_app|group_name": {
+  "doc": "master_app",
+  "field": "group_name",
+  "value": "Quest",
+  "normalized": "quest"
+ },
+ "master_app|group_street": {
+  "doc": "master_app",
+  "field": "group_street",
+  "value": "1000 Broker Way",
+  "normalized": "1000 broker way"
+ },
+ "master_app|group_state": {
+  "doc": "master_app",
+  "field": "group_state",
+  "value": "Oregon",
+  "normalized": "OR"
+ },
+ "master_app|eligible_employees": {
+  "doc": "master_app",
+  "field": "eligible_employees",
+  "value": "27",
+  "normalized": "27"
+ },
+ "master_app|proposed_effective_date": {
+  "doc": "master_app",
+  "field": "proposed_effective_date",
+  "value": "02/01/2023",
+  "normalized": "2023-02-01"
+ },
+ "master_app|signature_date": {
+  "doc": "master_app",
+  "field": "signature_date",
+  "value": "12/20/2022",
+  "normalized": "2022-12-20"
+ },
+ "certificate|face_amount": {
+  "doc": "certificate",
+  "field": "face_amount",
+  "value": "$10,000",
+  "normalized": "10000.00"
+ },
+ "certificate|certificate_date": {
+  "doc": "certificate",
+  "field": "certificate_date",
+  "value": "August 1, 2022",
+  "normalized": "2022-08-01"
+ },
+ "certificate|maturity_date": {
+  "doc": "certificate",
+  "field": "maturity_date",
+  "value": "August 1, 2115",
+  "normalized": "2115-08-01"
+ },
+ "certificate|risk_class": {
+  "doc": "certificate",
+  "field": "risk_class",
+  "value": "Non-Tobacco",
+  "normalized": "non-tobacco"
+ },
+ "certificate|date_of_birth": {
+  "doc": "certificate",
+  "field": "date_of_birth",
+  "value": "March 16, 1994",
+  "normalized": "1994-03-16"
+ },
+ "certificate|issue_age": {
+  "doc": "certificate",
+  "field": "issue_age",
+  "value": "28",
+  "normalized": "28"
+ },
+ "certificate|plan": {
+  "doc": "certificate",
+  "field": "plan",
+  "value": "Whole Life",
+  "normalized": "whole life"
+ },
+ "certificate|min_paidup_amount": {
+  "doc": "certificate",
+  "field": "min_paidup_amount",
+  "value": "$1,000",
+  "normalized": "1000.00"
+ },
+ "certificate|premium_frequency": {
+  "doc": "certificate",
+  "field": "premium_frequency",
+  "value": "Monthly",
+  "normalized": "Monthly"
+ },
+ "certificate|loan_interest_rate": {
+  "doc": "certificate",
+  "field": "loan_interest_rate",
+  "value": "8%",
+  "normalized": "8"
+ },
+ "certificate|rider_date": {
+  "doc": "certificate",
+  "field": "rider_date",
+  "value": "August 1, 2022",
+  "normalized": "2022-08-01"
+ },
+ "certificate|rider_benefit_amount": {
+  "doc": "certificate",
+  "field": "rider_benefit_amount",
+  "value": "$10,000",
+  "normalized": "10000.00"
+ },
+ "certificate|rider_annual_premium": {
+  "doc": "certificate",
+  "field": "rider_annual_premium",
+  "value": "$8.40",
+  "normalized": "8.40"
+ },
+ "certificate|rider_termination_date": {
+  "doc": "certificate",
+  "field": "rider_termination_date",
+  "value": "August 1, 2061",
+  "normalized": "2061-08-01"
+ },
+ "certificate|annual_premium": {
+  "doc": "certificate",
+  "field": "annual_premium",
+  "value": "$128.40",
+  "normalized": "128.40"
+ },
+ "certificate|ee_city": {
+  "doc": "certificate",
+  "field": "ee_city",
+  "value": "Salem",
+  "normalized": "salem"
+ },
+ "certificate|ee_state": {
+  "doc": "certificate",
+  "field": "ee_state",
+  "value": "OR",
+  "normalized": "OR"
+ },
+ "certificate|ee_zip": {
+  "doc": "certificate",
+  "field": "ee_zip",
+  "value": "97305",
+  "normalized": "97305"
+ },
+ "certificate|date_of_hire": {
+  "doc": "certificate",
+  "field": "date_of_hire",
+  "value": "07/15/2019",
+  "normalized": "2019-07-15"
+ },
+ "certificate|annual_salary": {
+  "doc": "certificate",
+  "field": "annual_salary",
+  "value": "$0",
+  "normalized": "0.00"
+ },
+ "certificate|payroll_frequency": {
+  "doc": "certificate",
+  "field": "payroll_frequency",
+  "value": "$5.70",
+  "normalized": "$5.70"
+ },
+ "certificate|payroll_deduction_amount": {
+  "doc": "certificate",
+  "field": "payroll_deduction_amount",
+  "value": "$5.70",
+  "normalized": "5.70"
+ },
+ "certificate|certificate_number": {
+  "doc": "certificate",
+  "field": "certificate_number",
+  "value": null,
+  "normalized": null
+ },
+ "certificate|insured_name": {
+  "doc": "certificate",
+  "field": "insured_name",
+  "value": null,
+  "normalized": null
+ },
+ "certificate|group_name": {
+  "doc": "certificate",
+  "field": "group_name",
+  "value": null,
+  "normalized": null
+ },
+ "certificate|group_number": {
+  "doc": "certificate",
+  "field": "group_number",
+  "value": null,
+  "normalized": null
+ },
+ "certificate|job_title": {
+  "doc": "certificate",
+  "field": "job_title",
+  "value": null,
+  "normalized": null
+ },
+ "employee_app_blank|group_name": {
+  "doc": "employee_app_blank",
+  "field": "group_name",
+  "value": null,
+  "normalized": null
+ },
+ "employee_app_blank|group_number": {
+  "doc": "employee_app_blank",
+  "field": "group_number",
+  "value": null,
+  "normalized": null
+ },
+ "employee_app_blank|face_amount": {
+  "doc": "employee_app_blank",
+  "field": "face_amount",
+  "value": null,
+  "normalized": null
+ },
+ "employee_app_blank|date_of_birth": {
+  "doc": "employee_app_blank",
+  "field": "date_of_birth",
+  "value": null,
+  "normalized": null
+ },
+ "employee_app_blank|ee_city": {
+  "doc": "employee_app_blank",
+  "field": "ee_city",
+  "value": null,
+  "normalized": null
+ },
+ "employee_app_blank|ee_state": {
+  "doc": "employee_app_blank",
+  "field": "ee_state",
+  "value": null,
+  "normalized": null
+ },
+ "employee_app_blank|ee_zip": {
+  "doc": "employee_app_blank",
+  "field": "ee_zip",
+  "value": null,
+  "normalized": null
+ },
+ "employee_app_blank|date_of_hire": {
+  "doc": "employee_app_blank",
+  "field": "date_of_hire",
+  "value": null,
+  "normalized": null
+ },
+ "employee_app_blank|annual_salary": {
+  "doc": "employee_app_blank",
+  "field": "annual_salary",
+  "value": null,
+  "normalized": null
+ },
+ "employee_app_blank|job_title": {
+  "doc": "employee_app_blank",
+  "field": "job_title",
+  "value": null,
+  "normalized": null
+ },
+ "employee_app_blank|payroll_frequency": {
+  "doc": "employee_app_blank",
+  "field": "payroll_frequency",
+  "value": null,
+  "normalized": null
+ },
+ "employee_app_blank|payroll_deduction_amount": {
+  "doc": "employee_app_blank",
+  "field": "payroll_deduction_amount",
+  "value": null,
+  "normalized": null
+ },
+ "master_app|group_number": {
+  "doc": "master_app",
+  "field": "group_number",
+  "value": null,
+  "normalized": null
+ }
+}

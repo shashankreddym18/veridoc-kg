@@ -1,0 +1,19 @@
+pdfplumber
+pytesseract
+opencv-python-headless
+numpy
+Pillow
+rapidfuzz
+jiwer
+rdflib
+pyshacl
+xlrd
+pandas
+pydantic
+gradio>=6,<7
+matplotlib
+networkx
+reportlab
+pypdf
+sklearn-crfsuite
+# optional: sentence-transformers (NLI check, dense retrieval), neo4j (load_neo4j.py), docling
