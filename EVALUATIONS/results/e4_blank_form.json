@@ -1,0 +1,85 @@
+{
+ "note": "Every value extracted from the blank application is false by construction.",
+ "rows": {
+  "rules (typed)": {
+   "values_emitted_on_blank_form": 0,
+   "loaded_after_verifier": 0
+  },
+  "proximity (naive)": {
+   "values_emitted_on_blank_form": 18,
+   "loaded_after_verifier": 0
+  },
+  "CRF": {
+   "values_emitted_on_blank_form": 0,
+   "loaded_after_verifier": 0,
+   "examples": []
+  },
+  "LLM llm:llama3.1:8b": {
+   "values_emitted_on_blank_form": 6,
+   "loaded_after_verifier": 0,
+   "examples": [
+    "face_amount='$'",
+    "annual_premium='$'",
+    "face_amount='$'",
+    "annual_premium='$'",
+    "face_amount='$2,500'",
+    "signature_date='Date:'"
+   ]
+  }
+ },
+ "proximity_rejection_reasons": {
+  "shacl:datatype": 14,
+  "template:printed_on_blank_form": 4
+ },
+ "examples": [
+  {
+   "field": "annual_salary",
+   "value": "Job Title/Occupation",
+   "status": "quarantined",
+   "reason": "shacl:datatype"
+  },
+  {
+   "field": "date_of_birth",
+   "value": "Social Security No./Tax",
+   "status": "quarantined",
+   "reason": "shacl:datatype"
+  },
+  {
+   "field": "date_of_hire",
+   "value": "Annual Salary/Compensation Job",
+   "status": "quarantined",
+   "reason": "shacl:datatype"
+  },
+  {
+   "field": "ee_city",
+   "value": "State Zip Code",
+   "status": "quarantined",
+   "reason": "template:printed_on_blank_form"
+  },
+  {
+   "field": "ee_state",
+   "value": "Street, Springfield, Massachusetts",
+   "status": "quarantined",
+   "reason": "shacl:datatype"
+  },
+  {
+   "field": "ee_zip",
+   "value": "Street",
+   "status": "quarantined",
+   "reason": "shacl:datatype"
+  },
+  {
+   "field": "group_name",
+   "value": "Group Number",
+   "status": "quarantined",
+   "reason": "template:printed_on_blank_form"
+  },
+  {
+   "field": "group_number",
+   "value": "\uf0a8Initial Enrollment \uf0a8New",
+   "status": "quarantined",
+   "reason": "shacl:datatype"
+  }
+ ],
+ "llm": "included"
+}

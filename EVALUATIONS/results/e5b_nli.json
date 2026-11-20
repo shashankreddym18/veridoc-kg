@@ -1,0 +1,284 @@
+{
+ "model": "cross-encoder/nli-deberta-v3-base",
+ "n": {
+  "true": 34,
+  "fabricated": 34,
+  "misattributed": 16
+ },
+ "combos": {
+  "hypothesis=field, premise=line": {
+   "rows": [
+    {
+     "threshold": 0.1,
+     "true_facts_rejected": 0.235,
+     "fabricated_caught": 0.824,
+     "misattributed_caught": 1.0
+    },
+    {
+     "threshold": 0.3,
+     "true_facts_rejected": 0.265,
+     "fabricated_caught": 0.853,
+     "misattributed_caught": 1.0
+    },
+    {
+     "threshold": 0.5,
+     "true_facts_rejected": 0.265,
+     "fabricated_caught": 0.882,
+     "misattributed_caught": 1.0
+    },
+    {
+     "threshold": 0.7,
+     "true_facts_rejected": 0.265,
+     "fabricated_caught": 0.912,
+     "misattributed_caught": 1.0
+    },
+    {
+     "threshold": 0.9,
+     "true_facts_rejected": 0.265,
+     "fabricated_caught": 0.941,
+     "misattributed_caught": 1.0
+    }
+   ],
+   "true_facts_rejected_at_0.5": [
+    {
+     "fact": "certificate:5:rider_annual_premium:rules:12",
+     "hypothesis": "The rider annual premium is $8.40.",
+     "premise": "Annual Premium $8.40",
+     "p_entail": 0.012
+    },
+    {
+     "fact": "certificate:5:rider_benefit_amount:rules:11",
+     "hypothesis": "The rider benefit amount is $10,000.",
+     "premise": "Benefit Amount $10,000",
+     "p_entail": 0.002
+    },
+    {
+     "fact": "certificate:5:rider_termination_date:rules:13",
+     "hypothesis": "The rider termination date is August 1, 2061.",
+     "premise": "Termination Date August 1, 2061",
+     "p_entail": 0.001
+    },
+    {
+     "fact": "certificate:31:ee_state:rules:1",
+     "hypothesis": "The ee state is OR.",
+     "premise": "Residential Address (Do not use PO Box) City\u2019 State ~ Zip Code\nStreet SALEM OR 97305",
+     "p_entail": 0.011
+    },
+    {
+     "fact": "certificate:32:payroll_deduction_amount:rules:2",
+     "hypothesis": "The payroll deduction amount is $ 5.70.",
+     "premise": "Your Semi-Monthly Premium | $ 5.70",
+     "p_entail": 0.04
+    },
+    {
+     "fact": "certificate:32:payroll_frequency:rules:1",
+     "hypothesis": "The payroll frequency is Semi-Monthly.",
+     "premise": "Your Semi-Monthly Premium | $ 5.70",
+     "p_entail": 0.05
+    },
+    {
+     "fact": "master_app:1:eligible_employees:rules:2",
+     "hypothesis": "The eligible employees is 27.",
+     "premise": "27",
+     "p_entail": 0.009
+    },
+    {
+     "fact": "proposal:1:group_name:rules:0",
+     "hypothesis": "The group name is Quest.",
+     "premise": "Group Insurance Proposal for\nQuest",
+     "p_entail": 0.128
+    },
+    {
+     "fact": "proposal:1:proposal_date:rules:2",
+     "hypothesis": "The proposal date is September 08, 2022.",
+     "premise": "Date: September 08, 2022",
+     "p_entail": 0.001
+    }
+   ],
+   "misattributed_accepted_at_0.5": []
+  },
+  "hypothesis=field, premise=context": {
+   "rows": [
+    {
+     "threshold": 0.1,
+     "true_facts_rejected": 0.088,
+     "fabricated_caught": 0.794,
+     "misattributed_caught": 0.875
+    },
+    {
+     "threshold": 0.3,
+     "true_facts_rejected": 0.088,
+     "fabricated_caught": 0.853,
+     "misattributed_caught": 0.938
+    },
+    {
+     "threshold": 0.5,
+     "true_facts_rejected": 0.118,
+     "fabricated_caught": 0.853,
+     "misattributed_caught": 0.938
+    },
+    {
+     "threshold": 0.7,
+     "true_facts_rejected": 0.118,
+     "fabricated_caught": 0.882,
+     "misattributed_caught": 0.938
+    },
+    {
+     "threshold": 0.9,
+     "true_facts_rejected": 0.147,
+     "fabricated_caught": 0.912,
+     "misattributed_caught": 0.938
+    }
+   ],
+   "true_facts_rejected_at_0.5": [
+    {
+     "fact": "certificate:5:rider_termination_date:rules:13",
+     "hypothesis": "The rider termination date is August 1, 2061.",
+     "premise": "This page is from the employee certificate.\nBenefit Amount $10,000\nAnnual Premium $8.40\nTermination Date August 1, 2061",
+     "p_entail": 0.008
+    },
+    {
+     "fact": "certificate:31:ee_state:rules:1",
+     "hypothesis": "The ee state is OR.",
+     "premise": "This page is from the employee certificate.\na (mm/dd/yvvy) No./Tax ID C] Male\n: wN ~ Female\nResidential Address (Do not use PO Box) City\u2019 State ~ Zip Code\nStreet SALEM OR 97305",
+     "p_entail": 0.007
+    },
+    {
+     "fact": "certificate:32:payroll_frequency:rules:1",
+     "hypothesis": "The payroll frequency is Semi-Monthly.",
+     "premise": "This page is from the employee certificate.\nFace Amount $ 10,000 Lo,\nYour Semi-Monthly Premium | $ 5.70",
+     "p_entail": 0.376
+    },
+    {
+     "fact": "proposal:1:group_name:rules:0",
+     "hypothesis": "The group name is Quest.",
+     "premise": "This page is from the group proposal.\nMassMutual@WORK\nGroup Insurance Proposal for\nQuest",
+     "p_entail": 0.007
+    }
+   ],
+   "misattributed_accepted_at_0.5": [
+    {
+     "hypothesis": "The payroll deduction amount is $ 10,000.",
+     "premise": "This page is from the employee certificate.\nFace Amount $ 10,000 Lo,\nYour Semi-Monthly Premium | $ 5.70",
+     "p_entail": 0.966
+    }
+   ]
+  },
+  "hypothesis=label, premise=line": {
+   "rows": [
+    {
+     "threshold": 0.1,
+     "true_facts_rejected": 0.088,
+     "fabricated_caught": 0.824,
+     "misattributed_caught": 1.0
+    },
+    {
+     "threshold": 0.3,
+     "true_facts_rejected": 0.118,
+     "fabricated_caught": 0.853,
+     "misattributed_caught": 1.0
+    },
+    {
+     "threshold": 0.5,
+     "true_facts_rejected": 0.118,
+     "fabricated_caught": 0.853,
+     "misattributed_caught": 1.0
+    },
+    {
+     "threshold": 0.7,
+     "true_facts_rejected": 0.118,
+     "fabricated_caught": 0.853,
+     "misattributed_caught": 1.0
+    },
+    {
+     "threshold": 0.9,
+     "true_facts_rejected": 0.118,
+     "fabricated_caught": 0.882,
+     "misattributed_caught": 1.0
+    }
+   ],
+   "true_facts_rejected_at_0.5": [
+    {
+     "fact": "certificate:31:ee_state:rules:1",
+     "hypothesis": "The state is OR.",
+     "premise": "Residential Address (Do not use PO Box) City\u2019 State ~ Zip Code\nStreet SALEM OR 97305",
+     "p_entail": 0.004
+    },
+    {
+     "fact": "master_app:1:eligible_employees:rules:2",
+     "hypothesis": "The number of eligible employees is 27.",
+     "premise": "27",
+     "p_entail": 0.01
+    },
+    {
+     "fact": "master_app:1:group_state:rules:1",
+     "hypothesis": "The state is Oregon.",
+     "premise": "State or Country ZIP/Postal Code\nOregon Xx222",
+     "p_entail": 0.043
+    },
+    {
+     "fact": "proposal:1:group_name:rules:0",
+     "hypothesis": "The group name is Quest.",
+     "premise": "Group Insurance Proposal for\nQuest",
+     "p_entail": 0.128
+    }
+   ],
+   "misattributed_accepted_at_0.5": []
+  },
+  "hypothesis=label, premise=context": {
+   "rows": [
+    {
+     "threshold": 0.1,
+     "true_facts_rejected": 0.088,
+     "fabricated_caught": 0.824,
+     "misattributed_caught": 0.875
+    },
+    {
+     "threshold": 0.3,
+     "true_facts_rejected": 0.088,
+     "fabricated_caught": 0.853,
+     "misattributed_caught": 1.0
+    },
+    {
+     "threshold": 0.5,
+     "true_facts_rejected": 0.088,
+     "fabricated_caught": 0.853,
+     "misattributed_caught": 1.0
+    },
+    {
+     "threshold": 0.7,
+     "true_facts_rejected": 0.088,
+     "fabricated_caught": 0.882,
+     "misattributed_caught": 1.0
+    },
+    {
+     "threshold": 0.9,
+     "true_facts_rejected": 0.118,
+     "fabricated_caught": 0.882,
+     "misattributed_caught": 1.0
+    }
+   ],
+   "true_facts_rejected_at_0.5": [
+    {
+     "fact": "certificate:31:ee_state:rules:1",
+     "hypothesis": "The state is OR.",
+     "premise": "This page is from the employee certificate.\na (mm/dd/yvvy) No./Tax ID C] Male\n: wN ~ Female\nResidential Address (Do not use PO Box) City\u2019 State ~ Zip Code\nStreet SALEM OR 97305",
+     "p_entail": 0.006
+    },
+    {
+     "fact": "master_app:1:group_state:rules:1",
+     "hypothesis": "The state is Oregon.",
+     "premise": "This page is from the master application.\nPO Box or Street, Apt. or Suite City\n1000 Broker Way xxxxkie\nState or Country ZIP/Postal Code\nOregon Xx222",
+     "p_entail": 0.006
+    },
+    {
+     "fact": "proposal:1:group_name:rules:0",
+     "hypothesis": "The group name is Quest.",
+     "premise": "This page is from the group proposal.\nMassMutual@WORK\nGroup Insurance Proposal for\nQuest",
+     "p_entail": 0.007
+    }
+   ],
+   "misattributed_accepted_at_0.5": []
+  }
+ }
+}

@@ -1,0 +1,47 @@
+@prefix ex:  <http://veridoc.example/onto#> .
+@prefix sh:  <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# SHACL shapes for the minimal insurance ontology (one shape per class).
+# A fact whose node/property violates a shape is quarantined with the
+# constraint name as its reason code (e.g. shacl:MaxCount).
+
+ex:CertificateShape a sh:NodeShape ; sh:targetClass ex:Certificate ;
+  sh:property [ sh:path ex:face_amount ; sh:datatype xsd:decimal ; sh:minExclusive 0 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:certificate_number ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:certificate_date ; sh:datatype xsd:date ; sh:maxCount 1 ; sh:lessThan ex:maturity_date ] ;
+  sh:property [ sh:path ex:maturity_date ; sh:datatype xsd:date ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:annual_premium ; sh:datatype xsd:decimal ; sh:minExclusive 0 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:min_paidup_amount ; sh:datatype xsd:decimal ; sh:minExclusive 0 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:payroll_deduction_amount ; sh:datatype xsd:decimal ; sh:minExclusive 0 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:loan_interest_rate ; sh:datatype xsd:decimal ; sh:minInclusive 0 ; sh:maxInclusive 25 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:premium_frequency ; sh:maxCount 1 ;
+                sh:in ( "Weekly" "Bi-Weekly" "Semi-Monthly" "Monthly" "Quarterly" "Annual" ) ] ;
+  sh:property [ sh:path ex:payroll_frequency ; sh:maxCount 1 ;
+                sh:in ( "Weekly" "Bi-Weekly" "Semi-Monthly" "Monthly" "Quarterly" "Annual" ) ] .
+
+# Eligibility rule from the master application: issue age at least 18 and under 76.
+ex:InsuredShape a sh:NodeShape ; sh:targetClass ex:Insured ;
+  sh:property [ sh:path ex:issue_age ; sh:datatype xsd:integer ; sh:minInclusive 18 ; sh:maxExclusive 76 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:date_of_birth ; sh:datatype xsd:date ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:date_of_hire ; sh:datatype xsd:date ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:annual_salary ; sh:datatype xsd:decimal ; sh:minInclusive 0 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:ee_state ; sh:pattern "^[A-Z]{2}$" ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:ee_zip ; sh:pattern "^[0-9]{5}$" ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:insured_name ; sh:maxCount 1 ] .
+
+ex:GroupShape a sh:NodeShape ; sh:targetClass ex:Group ;
+  sh:property [ sh:path ex:group_name ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:group_number ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:group_state ; sh:pattern "^[A-Z]{2}$" ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:situs_state ; sh:pattern "^[A-Z]{2}$" ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:eligible_employees ; sh:datatype xsd:integer ; sh:minInclusive 1 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:proposed_effective_date ; sh:datatype xsd:date ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:signature_date ; sh:datatype xsd:date ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:proposal_date ; sh:datatype xsd:date ; sh:maxCount 1 ] .
+
+ex:RiderShape a sh:NodeShape ; sh:targetClass ex:Rider ;
+  sh:property [ sh:path ex:rider_benefit_amount ; sh:datatype xsd:decimal ; sh:minExclusive 0 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:rider_annual_premium ; sh:datatype xsd:decimal ; sh:minExclusive 0 ; sh:maxCount 1 ] ;
+  sh:property [ sh:path ex:rider_date ; sh:datatype xsd:date ; sh:maxCount 1 ; sh:lessThan ex:rider_termination_date ] ;
+  sh:property [ sh:path ex:rider_termination_date ; sh:datatype xsd:date ; sh:maxCount 1 ] .

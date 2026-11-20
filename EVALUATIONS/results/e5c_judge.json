@@ -1,0 +1,81 @@
+{
+ "model": "llama3.1:8b",
+ "nli": "hypothesis=label, premise=line, threshold=0.5",
+ "n": {
+  "true": 34,
+  "fabricated": 34,
+  "misattributed": 16
+ },
+ "part1": {
+  "NLI alone": {
+   "true_facts_rejected": 0.118,
+   "fabricated_caught": 0.853,
+   "misattributed_caught": 1.0,
+   "llm_calls": 0
+  },
+  "LLM judge alone": {
+   "true_facts_rejected": 0.029,
+   "fabricated_caught": 0.971,
+   "misattributed_caught": 0.938,
+   "llm_calls": 84
+  },
+  "cascade (NLI, then LLM on rejections)": {
+   "true_facts_rejected": 0.029,
+   "fabricated_caught": 0.853,
+   "misattributed_caught": 0.938,
+   "llm_calls": 49
+  }
+ },
+ "unusable_judge_replies": 0,
+ "true_facts_still_rejected_by_cascade": [
+  "The eligible employees is 27."
+ ],
+ "part2": {
+  "llm_values_passing_hard_checks": {
+   "correct": 16,
+   "wrong": 4
+  },
+  "NLI alone": {
+   "wrong_values_stopped": 1,
+   "correct_values_lost": 1
+  },
+  "LLM judge alone": {
+   "wrong_values_stopped": 0,
+   "correct_values_lost": 0
+  },
+  "cascade (NLI, then LLM on rejections)": {
+   "wrong_values_stopped": 0,
+   "correct_values_lost": 0
+  },
+  "wrong_values": [
+   {
+    "field": "certificate_number",
+    "value": "MM-GCWL-2014",
+    "evidence": "MM-GCWL-2014 (OR)",
+    "nli_rejects": true,
+    "judge_rejects": false
+   },
+   {
+    "field": "payroll_frequency",
+    "value": "Monthly",
+    "evidence": "INITIAL PREMIUM PAYMENT FREQUENCY Monthly",
+    "nli_rejects": false,
+    "judge_rejects": false
+   },
+   {
+    "field": "insured_name",
+    "value": "Insured",
+    "evidence": "Insured - The person covered under this Certificate and named on the Certificate",
+    "nli_rejects": false,
+    "judge_rejects": false
+   },
+   {
+    "field": "group_name",
+    "value": "Group Whole Life Insurance Proposal",
+    "evidence": "Group Whole Life Insurance Proposal",
+    "nli_rejects": false,
+    "judge_rejects": false
+   }
+  ]
+ }
+}

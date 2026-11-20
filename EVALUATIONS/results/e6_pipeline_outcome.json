@@ -1,0 +1,31 @@
+{
+ "candidates": 36,
+ "verified": 34,
+ "quarantined": 2,
+ "quarantine": [
+  {
+   "doc": "master_app",
+   "page": 1,
+   "field": "proposed_effective_date",
+   "value": "02/01/2023",
+   "reason": "agree:only in reading 2",
+   "truth": "correct value (false rejection)"
+  },
+  {
+   "doc": "master_app",
+   "page": 3,
+   "field": "signature_date",
+   "value": "2/20/2022",
+   "reason": "agree:only in reading 1",
+   "truth": "wrong value (true rejection)"
+  }
+ ],
+ "deduction_file": {
+  "columns": 22,
+  "filled_correct": 7,
+  "filled_wrong": 0,
+  "left_empty": 15,
+  "fillable_from_this_document_set": 7,
+  "note": "The other 15 columns are redacted or absent in the de-identified set, so empty is the correct output."
+ }
+}

@@ -1,0 +1,227 @@
+{
+ "gold": "DATA/gold/fields_gold_draft.json (draft, single annotator)",
+ "gold_items": 50,
+ "gold_non_null": 32,
+ "systems": {
+  "rules, OCR reading 1 only": {
+   "all": {
+    "emitted": 30,
+    "correct": 29,
+    "wrong": 1,
+    "gold_values": 32,
+    "precision": 0.967,
+    "recall": 0.906,
+    "f1": 0.935,
+    "values_on_null_fields": 0
+   },
+   "scanned_docs": {
+    "emitted": 26,
+    "correct": 25,
+    "wrong": 1,
+    "gold_values": 28,
+    "precision": 0.962,
+    "recall": 0.893,
+    "f1": 0.926,
+    "values_on_null_fields": 0
+   }
+  },
+  "rules, OCR reading 2 only": {
+   "all": {
+    "emitted": 30,
+    "correct": 30,
+    "wrong": 0,
+    "gold_values": 32,
+    "precision": 1.0,
+    "recall": 0.938,
+    "f1": 0.968,
+    "values_on_null_fields": 0
+   },
+   "scanned_docs": {
+    "emitted": 26,
+    "correct": 26,
+    "wrong": 0,
+    "gold_values": 28,
+    "precision": 1.0,
+    "recall": 0.929,
+    "f1": 0.963,
+    "values_on_null_fields": 0
+   }
+  },
+  "rules, union of readings (no verifier)": {
+   "all": {
+    "emitted": 31,
+    "correct": 30,
+    "wrong": 1,
+    "gold_values": 32,
+    "precision": 0.968,
+    "recall": 0.938,
+    "f1": 0.952,
+    "values_on_null_fields": 0
+   },
+   "scanned_docs": {
+    "emitted": 27,
+    "correct": 26,
+    "wrong": 1,
+    "gold_values": 28,
+    "precision": 0.963,
+    "recall": 0.929,
+    "f1": 0.945,
+    "values_on_null_fields": 0
+   }
+  },
+  "rules + verifier (pipeline)": {
+   "all": {
+    "emitted": 29,
+    "correct": 29,
+    "wrong": 0,
+    "gold_values": 32,
+    "precision": 1.0,
+    "recall": 0.906,
+    "f1": 0.951,
+    "values_on_null_fields": 0
+   },
+   "scanned_docs": {
+    "emitted": 25,
+    "correct": 25,
+    "wrong": 0,
+    "gold_values": 28,
+    "precision": 1.0,
+    "recall": 0.893,
+    "f1": 0.943,
+    "values_on_null_fields": 0
+   }
+  },
+  "proximity baseline (no verifier)": {
+   "all": {
+    "emitted": 64,
+    "correct": 14,
+    "wrong": 50,
+    "gold_values": 32,
+    "precision": 0.219,
+    "recall": 0.438,
+    "f1": 0.292,
+    "values_on_null_fields": 28
+   },
+   "scanned_docs": {
+    "emitted": 45,
+    "correct": 11,
+    "wrong": 34,
+    "gold_values": 28,
+    "precision": 0.244,
+    "recall": 0.393,
+    "f1": 0.301,
+    "values_on_null_fields": 12
+   }
+  },
+  "proximity + verifier": {
+   "all": {
+    "emitted": 14,
+    "correct": 13,
+    "wrong": 1,
+    "gold_values": 32,
+    "precision": 0.929,
+    "recall": 0.406,
+    "f1": 0.565,
+    "values_on_null_fields": 1
+   },
+   "scanned_docs": {
+    "emitted": 11,
+    "correct": 10,
+    "wrong": 1,
+    "gold_values": 28,
+    "precision": 0.909,
+    "recall": 0.357,
+    "f1": 0.513,
+    "values_on_null_fields": 1
+   }
+  },
+  "CRF, trained on synthetic dev forms (no verifier)": {
+   "all": {
+    "emitted": 5,
+    "correct": 5,
+    "wrong": 0,
+    "gold_values": 32,
+    "precision": 1.0,
+    "recall": 0.156,
+    "f1": 0.27,
+    "values_on_null_fields": 0
+   },
+   "scanned_docs": {
+    "emitted": 5,
+    "correct": 5,
+    "wrong": 0,
+    "gold_values": 28,
+    "precision": 1.0,
+    "recall": 0.179,
+    "f1": 0.303,
+    "values_on_null_fields": 0
+   }
+  },
+  "CRF + verifier": {
+   "all": {
+    "emitted": 4,
+    "correct": 4,
+    "wrong": 0,
+    "gold_values": 32,
+    "precision": 1.0,
+    "recall": 0.125,
+    "f1": 0.222,
+    "values_on_null_fields": 0
+   },
+   "scanned_docs": {
+    "emitted": 4,
+    "correct": 4,
+    "wrong": 0,
+    "gold_values": 28,
+    "precision": 1.0,
+    "recall": 0.143,
+    "f1": 0.25,
+    "values_on_null_fields": 0
+   }
+  },
+  "LLM llm:llama3.1:8b (no verifier)": {
+   "all": {
+    "emitted": 55,
+    "correct": 19,
+    "wrong": 36,
+    "gold_values": 32,
+    "precision": 0.345,
+    "recall": 0.594,
+    "f1": 0.437,
+    "values_on_null_fields": 11
+   },
+   "scanned_docs": {
+    "emitted": 49,
+    "correct": 19,
+    "wrong": 30,
+    "gold_values": 28,
+    "precision": 0.388,
+    "recall": 0.679,
+    "f1": 0.494,
+    "values_on_null_fields": 9
+   }
+  },
+  "LLM llm:llama3.1:8b + verifier": {
+   "all": {
+    "emitted": 17,
+    "correct": 13,
+    "wrong": 4,
+    "gold_values": 32,
+    "precision": 0.765,
+    "recall": 0.406,
+    "f1": 0.531,
+    "values_on_null_fields": 2
+   },
+   "scanned_docs": {
+    "emitted": 16,
+    "correct": 13,
+    "wrong": 3,
+    "gold_values": 28,
+    "precision": 0.812,
+    "recall": 0.464,
+    "f1": 0.591,
+    "values_on_null_fields": 2
+   }
+  }
+ }
+}
