@@ -1,0 +1,94 @@
+{
+ "n_true_facts": 34,
+ "n_fabricated": 34,
+ "n_misattributed": 16,
+ "n_ocr_facts_for_false_rejection": 31,
+ "seed": 573,
+ "rows": [
+  {
+   "mode": "span fuzzy",
+   "threshold": 80,
+   "fabrication_detected": 0.029,
+   "misattribution_detected": 0.125,
+   "false_rejection_under_ocr_variation": 0.0
+  },
+  {
+   "mode": "span fuzzy",
+   "threshold": 85,
+   "fabrication_detected": 0.029,
+   "misattribution_detected": 0.25,
+   "false_rejection_under_ocr_variation": 0.0
+  },
+  {
+   "mode": "span fuzzy",
+   "threshold": 90,
+   "fabrication_detected": 0.029,
+   "misattribution_detected": 0.625,
+   "false_rejection_under_ocr_variation": 0.0
+  },
+  {
+   "mode": "span fuzzy",
+   "threshold": 95,
+   "fabrication_detected": 0.147,
+   "misattribution_detected": 0.812,
+   "false_rejection_under_ocr_variation": 0.129
+  },
+  {
+   "mode": "span fuzzy",
+   "threshold": 98,
+   "fabrication_detected": 0.647,
+   "misattribution_detected": 1.0,
+   "false_rejection_under_ocr_variation": 0.226
+  },
+  {
+   "mode": "span fuzzy",
+   "threshold": 100,
+   "fabrication_detected": 1.0,
+   "misattribution_detected": 1.0,
+   "false_rejection_under_ocr_variation": 0.226
+  },
+  {
+   "mode": "span fuzzy + value exact on page",
+   "threshold": 80,
+   "fabrication_detected": 0.971,
+   "misattribution_detected": 0.125,
+   "false_rejection_under_ocr_variation": 0.0
+  },
+  {
+   "mode": "span fuzzy + value exact on page",
+   "threshold": 85,
+   "fabrication_detected": 0.971,
+   "misattribution_detected": 0.25,
+   "false_rejection_under_ocr_variation": 0.0
+  },
+  {
+   "mode": "span fuzzy + value exact on page",
+   "threshold": 90,
+   "fabrication_detected": 0.971,
+   "misattribution_detected": 0.625,
+   "false_rejection_under_ocr_variation": 0.0
+  },
+  {
+   "mode": "span fuzzy + value exact on page",
+   "threshold": 95,
+   "fabrication_detected": 0.971,
+   "misattribution_detected": 0.812,
+   "false_rejection_under_ocr_variation": 0.129
+  },
+  {
+   "mode": "span fuzzy + value exact on page",
+   "threshold": 98,
+   "fabrication_detected": 0.971,
+   "misattribution_detected": 1.0,
+   "false_rejection_under_ocr_variation": 0.226
+  },
+  {
+   "mode": "span fuzzy + value exact on page",
+   "threshold": 100,
+   "fabrication_detected": 1.0,
+   "misattribution_detected": 1.0,
+   "false_rejection_under_ocr_variation": 0.226
+  }
+ ],
+ "note": "Synthetic corruptions of verified facts; span check only. NLI not included (not yet run)."
+}

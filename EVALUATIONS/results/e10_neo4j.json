@@ -1,0 +1,28 @@
+{
+ "server": "Neo4j/2026.10.2",
+ "nodes_by_label": {
+  "Certificate": 1,
+  "Document": 3,
+  "Evidence": 34,
+  "Group": 1,
+  "Insured": 1,
+  "Rider": 1,
+  "WorkflowStage": 6
+ },
+ "relationships_by_type": {
+  "FROM": 34,
+  "HAS_RIDER": 1,
+  "INSURES": 1,
+  "ISSUED_UNDER": 1,
+  "PRECEDES": 5,
+  "PRODUCED_AT": 3,
+  "SUPPORTS": 34
+ },
+ "evidence_without_document": 0,
+ "evidence_without_entity": 0,
+ "properties_without_evidence": 0,
+ "properties_total": 29,
+ "human_verified_evidence": 0,
+ "statements_loaded": 88,
+ "provenance_completeness": 1.0
+}
