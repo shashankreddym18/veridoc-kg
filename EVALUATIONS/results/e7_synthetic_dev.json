@@ -1,0 +1,362 @@
+{
+ "set": "dev",
+ "note": "Synthetic forms with known answers; see veridoc/synthetic.py for which set is held out.",
+ "forms": 20,
+ "conditions": [
+  "native",
+  "scan300",
+  "scan150"
+ ],
+ "systems": {
+  "proximity (naive) + verifier": {
+   "native": {
+    "emitted": 37,
+    "correct": 25,
+    "wrong": 12,
+    "gold_values": 142,
+    "empty_fields": 18,
+    "precision": 0.676,
+    "recall": 0.176,
+    "f1": 0.279,
+    "values_on_empty_fields": 0
+   },
+   "scan300": {
+    "emitted": 9,
+    "correct": 8,
+    "wrong": 1,
+    "gold_values": 172,
+    "empty_fields": 28,
+    "precision": 0.889,
+    "recall": 0.047,
+    "f1": 0.088,
+    "values_on_empty_fields": 0
+   },
+   "scan150": {
+    "emitted": 7,
+    "correct": 7,
+    "wrong": 0,
+    "gold_values": 172,
+    "empty_fields": 28,
+    "precision": 1.0,
+    "recall": 0.041,
+    "f1": 0.078,
+    "values_on_empty_fields": 0
+   },
+   "all": {
+    "emitted": 53,
+    "correct": 40,
+    "wrong": 13,
+    "gold_values": 486,
+    "empty_fields": 74,
+    "precision": 0.755,
+    "recall": 0.082,
+    "f1": 0.148,
+    "values_on_empty_fields": 0
+   }
+  },
+  "proximity (naive)": {
+   "native": {
+    "emitted": 160,
+    "correct": 25,
+    "wrong": 135,
+    "gold_values": 142,
+    "empty_fields": 18,
+    "precision": 0.156,
+    "recall": 0.176,
+    "f1": 0.166,
+    "values_on_empty_fields": 18
+   },
+   "scan300": {
+    "emitted": 206,
+    "correct": 39,
+    "wrong": 167,
+    "gold_values": 172,
+    "empty_fields": 28,
+    "precision": 0.189,
+    "recall": 0.227,
+    "f1": 0.206,
+    "values_on_empty_fields": 23
+   },
+   "scan150": {
+    "emitted": 198,
+    "correct": 21,
+    "wrong": 177,
+    "gold_values": 172,
+    "empty_fields": 28,
+    "precision": 0.106,
+    "recall": 0.122,
+    "f1": 0.114,
+    "values_on_empty_fields": 17
+   },
+   "all": {
+    "emitted": 564,
+    "correct": 85,
+    "wrong": 479,
+    "gold_values": 486,
+    "empty_fields": 74,
+    "precision": 0.151,
+    "recall": 0.175,
+    "f1": 0.162,
+    "values_on_empty_fields": 58
+   }
+  },
+  "rules (typed) + verifier": {
+   "native": {
+    "emitted": 137,
+    "correct": 137,
+    "wrong": 0,
+    "gold_values": 142,
+    "empty_fields": 18,
+    "precision": 1.0,
+    "recall": 0.965,
+    "f1": 0.982,
+    "values_on_empty_fields": 0
+   },
+   "scan300": {
+    "emitted": 80,
+    "correct": 80,
+    "wrong": 0,
+    "gold_values": 172,
+    "empty_fields": 28,
+    "precision": 1.0,
+    "recall": 0.465,
+    "f1": 0.635,
+    "values_on_empty_fields": 0
+   },
+   "scan150": {
+    "emitted": 51,
+    "correct": 51,
+    "wrong": 0,
+    "gold_values": 172,
+    "empty_fields": 28,
+    "precision": 1.0,
+    "recall": 0.297,
+    "f1": 0.457,
+    "values_on_empty_fields": 0
+   },
+   "all": {
+    "emitted": 268,
+    "correct": 268,
+    "wrong": 0,
+    "gold_values": 486,
+    "empty_fields": 74,
+    "precision": 1.0,
+    "recall": 0.551,
+    "f1": 0.711,
+    "values_on_empty_fields": 0
+   }
+  },
+  "rules (typed)": {
+   "native": {
+    "emitted": 137,
+    "correct": 137,
+    "wrong": 0,
+    "gold_values": 142,
+    "empty_fields": 18,
+    "precision": 1.0,
+    "recall": 0.965,
+    "f1": 0.982,
+    "values_on_empty_fields": 0
+   },
+   "scan300": {
+    "emitted": 152,
+    "correct": 151,
+    "wrong": 1,
+    "gold_values": 172,
+    "empty_fields": 28,
+    "precision": 0.993,
+    "recall": 0.878,
+    "f1": 0.932,
+    "values_on_empty_fields": 0
+   },
+   "scan150": {
+    "emitted": 112,
+    "correct": 109,
+    "wrong": 3,
+    "gold_values": 172,
+    "empty_fields": 28,
+    "precision": 0.973,
+    "recall": 0.634,
+    "f1": 0.768,
+    "values_on_empty_fields": 0
+   },
+   "all": {
+    "emitted": 401,
+    "correct": 397,
+    "wrong": 4,
+    "gold_values": 486,
+    "empty_fields": 74,
+    "precision": 0.99,
+    "recall": 0.817,
+    "f1": 0.895,
+    "values_on_empty_fields": 0
+   }
+  },
+  "CRF + verifier": {
+   "native": {
+    "emitted": 142,
+    "correct": 142,
+    "wrong": 0,
+    "gold_values": 142,
+    "empty_fields": 18,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "values_on_empty_fields": 0
+   },
+   "scan300": {
+    "emitted": 101,
+    "correct": 101,
+    "wrong": 0,
+    "gold_values": 172,
+    "empty_fields": 28,
+    "precision": 1.0,
+    "recall": 0.587,
+    "f1": 0.74,
+    "values_on_empty_fields": 0
+   },
+   "scan150": {
+    "emitted": 88,
+    "correct": 88,
+    "wrong": 0,
+    "gold_values": 172,
+    "empty_fields": 28,
+    "precision": 1.0,
+    "recall": 0.512,
+    "f1": 0.677,
+    "values_on_empty_fields": 0
+   },
+   "all": {
+    "emitted": 331,
+    "correct": 331,
+    "wrong": 0,
+    "gold_values": 486,
+    "empty_fields": 74,
+    "precision": 1.0,
+    "recall": 0.681,
+    "f1": 0.81,
+    "values_on_empty_fields": 0
+   }
+  },
+  "CRF": {
+   "native": {
+    "emitted": 142,
+    "correct": 142,
+    "wrong": 0,
+    "gold_values": 142,
+    "empty_fields": 18,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "values_on_empty_fields": 0
+   },
+   "scan300": {
+    "emitted": 165,
+    "correct": 151,
+    "wrong": 14,
+    "gold_values": 172,
+    "empty_fields": 28,
+    "precision": 0.915,
+    "recall": 0.878,
+    "f1": 0.896,
+    "values_on_empty_fields": 0
+   },
+   "scan150": {
+    "emitted": 148,
+    "correct": 134,
+    "wrong": 14,
+    "gold_values": 172,
+    "empty_fields": 28,
+    "precision": 0.905,
+    "recall": 0.779,
+    "f1": 0.838,
+    "values_on_empty_fields": 0
+   },
+   "all": {
+    "emitted": 455,
+    "correct": 427,
+    "wrong": 28,
+    "gold_values": 486,
+    "empty_fields": 74,
+    "precision": 0.938,
+    "recall": 0.879,
+    "f1": 0.908,
+    "values_on_empty_fields": 0
+   }
+  }
+ },
+ "f1_by_field": {
+  "proximity (naive) + verifier": {
+   "annual_salary": 0.0,
+   "date_of_hire": 0.0,
+   "ee_city": 0.0,
+   "ee_state": 0.0,
+   "ee_zip": 0.0,
+   "face_amount": 0.0,
+   "group_name": 0.231,
+   "group_number": 0.721,
+   "payroll_deduction_amount": 0.0,
+   "payroll_frequency": 0.0
+  },
+  "proximity (naive)": {
+   "annual_salary": 0.0,
+   "date_of_hire": 0.0,
+   "ee_city": 0.0,
+   "ee_state": 0.0,
+   "ee_zip": 0.017,
+   "face_amount": 0.0,
+   "group_name": 0.25,
+   "group_number": 0.769,
+   "payroll_deduction_amount": 0.556,
+   "payroll_frequency": 0.0
+  },
+  "rules (typed) + verifier": {
+   "annual_salary": 0.991,
+   "date_of_hire": 0.989,
+   "ee_city": 0.683,
+   "ee_state": 0.659,
+   "ee_zip": 0.65,
+   "face_amount": 0.871,
+   "group_name": 0.519,
+   "group_number": 0.699,
+   "payroll_deduction_amount": 0.0,
+   "payroll_frequency": 0.0
+  },
+  "rules (typed)": {
+   "annual_salary": 1.0,
+   "date_of_hire": 1.0,
+   "ee_city": 0.875,
+   "ee_state": 0.848,
+   "ee_zip": 0.839,
+   "face_amount": 0.957,
+   "group_name": 0.909,
+   "group_number": 0.932,
+   "payroll_deduction_amount": 0.667,
+   "payroll_frequency": 0.667
+  },
+  "CRF + verifier": {
+   "annual_salary": 1.0,
+   "date_of_hire": 1.0,
+   "ee_city": 0.898,
+   "ee_state": 0.871,
+   "ee_zip": 0.991,
+   "face_amount": 0.921,
+   "group_name": 0.519,
+   "group_number": 0.667,
+   "payroll_deduction_amount": 0.0,
+   "payroll_frequency": 0.0
+  },
+  "CRF": {
+   "annual_salary": 1.0,
+   "date_of_hire": 1.0,
+   "ee_city": 0.991,
+   "ee_state": 1.0,
+   "ee_zip": 1.0,
+   "face_amount": 0.948,
+   "group_name": 0.881,
+   "group_number": 0.814,
+   "payroll_deduction_amount": 0.667,
+   "payroll_frequency": 0.0
+  }
+ }
+}

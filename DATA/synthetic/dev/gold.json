@@ -1,0 +1,546 @@
+{
+ "note": "Synthetic personas; every value generated. None = field left empty.",
+ "set": "dev",
+ "seed": 573,
+ "conditions": [
+  "native",
+  "scan300",
+  "scan150"
+ ],
+ "scored_fields": [
+  "group_name",
+  "group_number",
+  "ee_city",
+  "ee_state",
+  "ee_zip",
+  "date_of_hire",
+  "annual_salary",
+  "face_amount",
+  "payroll_frequency",
+  "payroll_deduction_amount"
+ ],
+ "forms": [
+  {
+   "form": "syn_d001",
+   "font": "Helvetica",
+   "empty": [
+    "ee_zip"
+   ],
+   "values": {
+    "group_name": "Bluewater Credit Union Group",
+    "group_number": "G60597",
+    "ee_city": "Spokane",
+    "ee_state": "WA",
+    "ee_zip": null,
+    "date_of_hire": "03/20/2023",
+    "annual_salary": "$106,000",
+    "face_amount": "$15,000",
+    "payroll_frequency": "Monthly",
+    "payroll_deduction_amount": "11.82"
+   },
+   "unscored": {
+    "insured_name": "Elena M. Sato",
+    "date_of_birth": "02/23/1992",
+    "ee_street": "7769 Cedar Ln",
+    "job_title": "Electrician",
+    "annual_premium": "141.84"
+   }
+  },
+  {
+   "form": "syn_d002",
+   "font": "Helvetica",
+   "empty": [
+    "annual_salary"
+   ],
+   "values": {
+    "group_name": "Bluewater Credit Union LLC",
+    "group_number": "G30063",
+    "ee_city": "Tacoma",
+    "ee_state": "WA",
+    "ee_zip": "98418",
+    "date_of_hire": "02/10/2017",
+    "annual_salary": null,
+    "face_amount": "$20,000",
+    "payroll_frequency": "Bi-Weekly",
+    "payroll_deduction_amount": "10.33"
+   },
+   "unscored": {
+    "insured_name": "Priya P. Quinn",
+    "date_of_birth": "10/10/1991",
+    "ee_street": "5292 Maple Ave",
+    "job_title": "Machinist",
+    "annual_premium": "268.65"
+   }
+  },
+  {
+   "form": "syn_d003",
+   "font": "Courier",
+   "empty": [
+    "date_of_hire",
+    "ee_city",
+    "face_amount"
+   ],
+   "values": {
+    "group_name": "Bluewater Credit Union Group",
+    "group_number": "G69672",
+    "ee_city": null,
+    "ee_state": "OR",
+    "ee_zip": "97718",
+    "date_of_hire": null,
+    "annual_salary": "$35,000",
+    "face_amount": null,
+    "payroll_frequency": "Weekly",
+    "payroll_deduction_amount": "12.81"
+   },
+   "unscored": {
+    "insured_name": "Fatima B. Dubois",
+    "date_of_birth": "12/26/1967",
+    "ee_street": "9016 Oak St",
+    "job_title": "Electrician",
+    "annual_premium": "666.27"
+   }
+  },
+  {
+   "form": "syn_d004",
+   "font": "Courier",
+   "empty": [
+    "face_amount"
+   ],
+   "values": {
+    "group_name": "Northwind Logistics LLC",
+    "group_number": "G73586",
+    "ee_city": "Bend",
+    "ee_state": "OR",
+    "ee_zip": "97755",
+    "date_of_hire": "02/16/2005",
+    "annual_salary": "$108,000",
+    "face_amount": null,
+    "payroll_frequency": "Monthly",
+    "payroll_deduction_amount": "19.20"
+   },
+   "unscored": {
+    "insured_name": "Hiro R. Alvarez",
+    "date_of_birth": "11/11/1992",
+    "ee_street": "9013 Willow Ct",
+    "job_title": "Line Cook",
+    "annual_premium": "230.36"
+   }
+  },
+  {
+   "form": "syn_d005",
+   "font": "Helvetica",
+   "empty": [
+    "date_of_hire",
+    "ee_state",
+    "face_amount"
+   ],
+   "values": {
+    "group_name": "Summit Ridge Schools Co",
+    "group_number": "G67725",
+    "ee_city": "Reno",
+    "ee_state": null,
+    "ee_zip": "89595",
+    "date_of_hire": null,
+    "annual_salary": "$117,000",
+    "face_amount": null,
+    "payroll_frequency": "Bi-Weekly",
+    "payroll_deduction_amount": "23.86"
+   },
+   "unscored": {
+    "insured_name": "Aisha W. Reyes",
+    "date_of_birth": "04/18/1988",
+    "ee_street": "3757 Oak St",
+    "job_title": "Accountant",
+    "annual_premium": "620.24"
+   }
+  },
+  {
+   "form": "syn_d006",
+   "font": "Helvetica",
+   "empty": [],
+   "values": {
+    "group_name": "Northwind Logistics Inc",
+    "group_number": "G82969",
+    "ee_city": "Boise",
+    "ee_state": "ID",
+    "ee_zip": "83719",
+    "date_of_hire": "09/16/2019",
+    "annual_salary": "$41,000",
+    "face_amount": "$20,000",
+    "payroll_frequency": "Monthly",
+    "payroll_deduction_amount": "25.88"
+   },
+   "unscored": {
+    "insured_name": "Daniel F. Brennan",
+    "date_of_birth": "01/06/1978",
+    "ee_street": "4112 Cedar Ln",
+    "job_title": "Registered Nurse",
+    "annual_premium": "310.61"
+   }
+  },
+  {
+   "form": "syn_d007",
+   "font": "Courier",
+   "empty": [
+    "group_number"
+   ],
+   "values": {
+    "group_name": "Summit Ridge Schools",
+    "group_number": null,
+    "ee_city": "Reno",
+    "ee_state": "NV",
+    "ee_zip": "89523",
+    "date_of_hire": "06/15/2009",
+    "annual_salary": "$135,000",
+    "face_amount": "$25,000",
+    "payroll_frequency": "Monthly",
+    "payroll_deduction_amount": "26.42"
+   },
+   "unscored": {
+    "insured_name": "Ivan L. Petrov",
+    "date_of_birth": "05/26/1972",
+    "ee_street": "7274 Willow Ct",
+    "job_title": "Teacher",
+    "annual_premium": "317.09"
+   }
+  },
+  {
+   "form": "syn_d008",
+   "font": "Courier",
+   "empty": [],
+   "values": {
+    "group_name": "Redrock Tooling Inc",
+    "group_number": "G32027",
+    "ee_city": "Tacoma",
+    "ee_state": "WA",
+    "ee_zip": "98483",
+    "date_of_hire": "12/25/2021",
+    "annual_salary": "$36,000",
+    "face_amount": "$15,000",
+    "payroll_frequency": "Semi-Monthly",
+    "payroll_deduction_amount": "7.02"
+   },
+   "unscored": {
+    "insured_name": "Maria A. Garza",
+    "date_of_birth": "08/15/2002",
+    "ee_street": "4166 Willow Ct",
+    "job_title": "Machinist",
+    "annual_premium": "168.50"
+   }
+  },
+  {
+   "form": "syn_d009",
+   "font": "Courier",
+   "empty": [],
+   "values": {
+    "group_name": "Harbor Point Hotels Co",
+    "group_number": "G32745",
+    "ee_city": "Tacoma",
+    "ee_state": "WA",
+    "ee_zip": "98486",
+    "date_of_hire": "11/12/2013",
+    "annual_salary": "$75,000",
+    "face_amount": "$25,000",
+    "payroll_frequency": "Bi-Weekly",
+    "payroll_deduction_amount": "9.52"
+   },
+   "unscored": {
+    "insured_name": "Tomas T. Eriksen",
+    "date_of_birth": "01/13/1988",
+    "ee_street": "8690 Pine Rd",
+    "job_title": "Line Cook",
+    "annual_premium": "247.46"
+   }
+  },
+  {
+   "form": "syn_d010",
+   "font": "Courier",
+   "empty": [],
+   "values": {
+    "group_name": "Bluewater Credit Union LLC",
+    "group_number": "G22366",
+    "ee_city": "Bend",
+    "ee_state": "OR",
+    "ee_zip": "97748",
+    "date_of_hire": "08/07/2016",
+    "annual_salary": "$33,000",
+    "face_amount": "$20,000",
+    "payroll_frequency": "Monthly",
+    "payroll_deduction_amount": "20.18"
+   },
+   "unscored": {
+    "insured_name": "Nadia E. Petrov",
+    "date_of_birth": "07/26/1975",
+    "ee_street": "8894 Oak St",
+    "job_title": "Front Desk Agent",
+    "annual_premium": "242.14"
+   }
+  },
+  {
+   "form": "syn_d011",
+   "font": "Courier",
+   "empty": [],
+   "values": {
+    "group_name": "Harbor Point Hotels Co",
+    "group_number": "G71630",
+    "ee_city": "Boise",
+    "ee_state": "ID",
+    "ee_zip": "83720",
+    "date_of_hire": "09/19/2019",
+    "annual_salary": "$59,000",
+    "face_amount": "$25,000",
+    "payroll_frequency": "Weekly",
+    "payroll_deduction_amount": "5.10"
+   },
+   "unscored": {
+    "insured_name": "Hiro E. Ito",
+    "date_of_birth": "12/21/1996",
+    "ee_street": "7134 Maple Ave",
+    "job_title": "Accountant",
+    "annual_premium": "265.13"
+   }
+  },
+  {
+   "form": "syn_d012",
+   "font": "Courier",
+   "empty": [
+    "date_of_hire",
+    "payroll_deduction_amount",
+    "payroll_frequency"
+   ],
+   "values": {
+    "group_name": "Northwind Logistics LLC",
+    "group_number": "G19897",
+    "ee_city": "Ogden",
+    "ee_state": "UT",
+    "ee_zip": "84461",
+    "date_of_hire": null,
+    "annual_salary": "$138,000",
+    "face_amount": "$20,000",
+    "payroll_frequency": null,
+    "payroll_deduction_amount": null
+   },
+   "unscored": {
+    "insured_name": "Elena K. Jensen",
+    "date_of_birth": "07/17/1974",
+    "ee_street": "356 Elm Dr",
+    "job_title": "Front Desk Agent",
+    "annual_premium": "314.44"
+   }
+  },
+  {
+   "form": "syn_d013",
+   "font": "Courier",
+   "empty": [
+    "payroll_deduction_amount",
+    "payroll_frequency"
+   ],
+   "values": {
+    "group_name": "Bluewater Credit Union Co",
+    "group_number": "G58183",
+    "ee_city": "Reno",
+    "ee_state": "NV",
+    "ee_zip": "89522",
+    "date_of_hire": "12/23/2012",
+    "annual_salary": "$31,000",
+    "face_amount": "$25,000",
+    "payroll_frequency": null,
+    "payroll_deduction_amount": null
+   },
+   "unscored": {
+    "insured_name": "Daniel F. Eriksen",
+    "date_of_birth": "03/02/1977",
+    "ee_street": "434 Maple Ave",
+    "job_title": "Accountant",
+    "annual_premium": "380.93"
+   }
+  },
+  {
+   "form": "syn_d014",
+   "font": "Courier",
+   "empty": [
+    "date_of_hire"
+   ],
+   "values": {
+    "group_name": "Bluewater Credit Union",
+    "group_number": "G81751",
+    "ee_city": "Spokane",
+    "ee_state": "WA",
+    "ee_zip": "99254",
+    "date_of_hire": null,
+    "annual_salary": "$136,000",
+    "face_amount": "$10,000",
+    "payroll_frequency": "Monthly",
+    "payroll_deduction_amount": "10.06"
+   },
+   "unscored": {
+    "insured_name": "Ivan S. Haddad",
+    "date_of_birth": "04/26/1973",
+    "ee_street": "3113 Oak St",
+    "job_title": "Line Cook",
+    "annual_premium": "120.71"
+   }
+  },
+  {
+   "form": "syn_d015",
+   "font": "Courier",
+   "empty": [],
+   "values": {
+    "group_name": "Bluewater Credit Union Group",
+    "group_number": "G73609",
+    "ee_city": "Fresno",
+    "ee_state": "CA",
+    "ee_zip": "93721",
+    "date_of_hire": "02/28/2020",
+    "annual_salary": "$119,000",
+    "face_amount": "$25,000",
+    "payroll_frequency": "Weekly",
+    "payroll_deduction_amount": "5.95"
+   },
+   "unscored": {
+    "insured_name": "Samuel K. Lindqvist",
+    "date_of_birth": "06/18/1975",
+    "ee_street": "6017 Pine Rd",
+    "job_title": "Line Cook",
+    "annual_premium": "309.53"
+   }
+  },
+  {
+   "form": "syn_d016",
+   "font": "Helvetica",
+   "empty": [
+    "face_amount"
+   ],
+   "values": {
+    "group_name": "Summit Ridge Schools Inc",
+    "group_number": "G48348",
+    "ee_city": "Tacoma",
+    "ee_state": "WA",
+    "ee_zip": "98479",
+    "date_of_hire": "11/04/2018",
+    "annual_salary": "$107,000",
+    "face_amount": null,
+    "payroll_frequency": "Bi-Weekly",
+    "payroll_deduction_amount": "13.57"
+   },
+   "unscored": {
+    "insured_name": "Hiro N. Jensen",
+    "date_of_birth": "05/20/1981",
+    "ee_street": "9254 Elm Dr",
+    "job_title": "Accountant",
+    "annual_premium": "352.78"
+   }
+  },
+  {
+   "form": "syn_d017",
+   "font": "Helvetica",
+   "empty": [
+    "ee_city",
+    "ee_zip",
+    "payroll_deduction_amount",
+    "payroll_frequency"
+   ],
+   "values": {
+    "group_name": "Harbor Point Hotels Co",
+    "group_number": "G49638",
+    "ee_city": null,
+    "ee_state": "CA",
+    "ee_zip": null,
+    "date_of_hire": "12/06/2011",
+    "annual_salary": "$131,000",
+    "face_amount": "$10,000",
+    "payroll_frequency": null,
+    "payroll_deduction_amount": null
+   },
+   "unscored": {
+    "insured_name": "Elena L. Garza",
+    "date_of_birth": "02/08/1972",
+    "ee_street": "7091 Oak St",
+    "job_title": "Accountant",
+    "annual_premium": "128.47"
+   }
+  },
+  {
+   "form": "syn_d018",
+   "font": "Courier",
+   "empty": [
+    "date_of_hire"
+   ],
+   "values": {
+    "group_name": "Ironwood Manufacturing Group",
+    "group_number": "G33975",
+    "ee_city": "Reno",
+    "ee_state": "NV",
+    "ee_zip": "89531",
+    "date_of_hire": null,
+    "annual_salary": "$54,000",
+    "face_amount": "$20,000",
+    "payroll_frequency": "Weekly",
+    "payroll_deduction_amount": "5.73"
+   },
+   "unscored": {
+    "insured_name": "Elena W. Dubois",
+    "date_of_birth": "11/04/1994",
+    "ee_street": "5304 Elm Dr",
+    "job_title": "Accountant",
+    "annual_premium": "297.88"
+   }
+  },
+  {
+   "form": "syn_d019",
+   "font": "Helvetica",
+   "empty": [
+    "group_number",
+    "payroll_deduction_amount",
+    "payroll_frequency"
+   ],
+   "values": {
+    "group_name": "Summit Ridge Schools LLC",
+    "group_number": null,
+    "ee_city": "Reno",
+    "ee_state": "NV",
+    "ee_zip": "89594",
+    "date_of_hire": "01/06/2008",
+    "annual_salary": "$80,000",
+    "face_amount": "$10,000",
+    "payroll_frequency": null,
+    "payroll_deduction_amount": null
+   },
+   "unscored": {
+    "insured_name": "Hiro J. Garza",
+    "date_of_birth": "05/07/1970",
+    "ee_street": "1893 Birch Way",
+    "job_title": "Electrician",
+    "annual_premium": "113.68"
+   }
+  },
+  {
+   "form": "syn_d020",
+   "font": "Courier",
+   "empty": [
+    "group_name",
+    "payroll_deduction_amount",
+    "payroll_frequency"
+   ],
+   "values": {
+    "group_name": null,
+    "group_number": "G16653",
+    "ee_city": "Spokane",
+    "ee_state": "WA",
+    "ee_zip": "99272",
+    "date_of_hire": "10/19/2015",
+    "annual_salary": "$103,000",
+    "face_amount": "$25,000",
+    "payroll_frequency": null,
+    "payroll_deduction_amount": null
+   },
+   "unscored": {
+    "insured_name": "James A. Eriksen",
+    "date_of_birth": "07/15/1975",
+    "ee_street": "9814 Willow Ct",
+    "job_title": "Warehouse Associate",
+    "annual_premium": "337.48"
+   }
+  }
+ ]
+}

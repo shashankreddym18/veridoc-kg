@@ -1,0 +1,562 @@
+{
+ "note": "Synthetic personas; every value generated. None = field left empty.",
+ "set": "test",
+ "seed": 2026,
+ "conditions": [
+  "native",
+  "scan300",
+  "scan150"
+ ],
+ "scored_fields": [
+  "group_name",
+  "group_number",
+  "ee_city",
+  "ee_state",
+  "ee_zip",
+  "date_of_hire",
+  "annual_salary",
+  "face_amount",
+  "payroll_frequency",
+  "payroll_deduction_amount"
+ ],
+ "forms": [
+  {
+   "form": "syn_t001",
+   "font": "Courier",
+   "empty": [],
+   "values": {
+    "group_name": "Ironwood Manufacturing",
+    "group_number": "G67815",
+    "ee_city": "Eugene",
+    "ee_state": "OR",
+    "ee_zip": "97437",
+    "date_of_hire": "04/20/2022",
+    "annual_salary": "$132,000",
+    "face_amount": "$20,000",
+    "payroll_frequency": "Weekly",
+    "payroll_deduction_amount": "4.81"
+   },
+   "unscored": {
+    "insured_name": "Fatima A. Thompson",
+    "date_of_birth": "07/26/1998",
+    "ee_street": "1422 Oak St",
+    "job_title": "Registered Nurse",
+    "annual_premium": "250.35"
+   }
+  },
+  {
+   "form": "syn_t002",
+   "font": "Helvetica",
+   "empty": [],
+   "values": {
+    "group_name": "Ironwood Manufacturing Inc",
+    "group_number": "G65763",
+    "ee_city": "Bend",
+    "ee_state": "OR",
+    "ee_zip": "97754",
+    "date_of_hire": "06/15/2018",
+    "annual_salary": "$100,000",
+    "face_amount": "$50,000",
+    "payroll_frequency": "Semi-Monthly",
+    "payroll_deduction_amount": "23.26"
+   },
+   "unscored": {
+    "insured_name": "Kofi S. Morales",
+    "date_of_birth": "02/13/1999",
+    "ee_street": "8695 Cedar Ln",
+    "job_title": "Accountant",
+    "annual_premium": "558.15"
+   }
+  },
+  {
+   "form": "syn_t003",
+   "font": "Helvetica",
+   "empty": [
+    "ee_zip"
+   ],
+   "values": {
+    "group_name": "Ironwood Manufacturing Group",
+    "group_number": "G66762",
+    "ee_city": "Reno",
+    "ee_state": "NV",
+    "ee_zip": null,
+    "date_of_hire": "09/13/2014",
+    "annual_salary": "$111,000",
+    "face_amount": "$25,000",
+    "payroll_frequency": "Semi-Monthly",
+    "payroll_deduction_amount": "14.59"
+   },
+   "unscored": {
+    "insured_name": "Daniel K. Ito",
+    "date_of_birth": "09/26/1994",
+    "ee_street": "251 Oak St",
+    "job_title": "Front Desk Agent",
+    "annual_premium": "350.04"
+   }
+  },
+  {
+   "form": "syn_t004",
+   "font": "Helvetica",
+   "empty": [
+    "annual_salary",
+    "date_of_hire",
+    "ee_zip"
+   ],
+   "values": {
+    "group_name": "Bluewater Credit Union Group",
+    "group_number": "G58513",
+    "ee_city": "Eugene",
+    "ee_state": "OR",
+    "ee_zip": null,
+    "date_of_hire": null,
+    "annual_salary": null,
+    "face_amount": "$25,000",
+    "payroll_frequency": "Semi-Monthly",
+    "payroll_deduction_amount": "14.40"
+   },
+   "unscored": {
+    "insured_name": "Wei G. Nakamura",
+    "date_of_birth": "12/16/1966",
+    "ee_street": "2497 Pine Rd",
+    "job_title": "Warehouse Associate",
+    "annual_premium": "345.63"
+   }
+  },
+  {
+   "form": "syn_t005",
+   "font": "Helvetica",
+   "empty": [
+    "ee_state",
+    "payroll_deduction_amount",
+    "payroll_frequency"
+   ],
+   "values": {
+    "group_name": "Juniper Health Partners LLC",
+    "group_number": "G86812",
+    "ee_city": "Reno",
+    "ee_state": null,
+    "ee_zip": "89520",
+    "date_of_hire": "10/05/2021",
+    "annual_salary": "$94,000",
+    "face_amount": "$15,000",
+    "payroll_frequency": null,
+    "payroll_deduction_amount": null
+   },
+   "unscored": {
+    "insured_name": "Grace T. Nakamura",
+    "date_of_birth": "05/03/1988",
+    "ee_street": "6496 Willow Ct",
+    "job_title": "Machinist",
+    "annual_premium": "192.31"
+   }
+  },
+  {
+   "form": "syn_t006",
+   "font": "Courier",
+   "empty": [
+    "date_of_hire",
+    "group_name",
+    "payroll_deduction_amount",
+    "payroll_frequency"
+   ],
+   "values": {
+    "group_name": null,
+    "group_number": "G88409",
+    "ee_city": "Reno",
+    "ee_state": "NV",
+    "ee_zip": "89526",
+    "date_of_hire": null,
+    "annual_salary": "$110,000",
+    "face_amount": "$50,000",
+    "payroll_frequency": null,
+    "payroll_deduction_amount": null
+   },
+   "unscored": {
+    "insured_name": "Fatima C. Reyes",
+    "date_of_birth": "04/14/2001",
+    "ee_street": "6639 Oak St",
+    "job_title": "Line Cook",
+    "annual_premium": "666.51"
+   }
+  },
+  {
+   "form": "syn_t007",
+   "font": "Helvetica",
+   "empty": [
+    "group_name"
+   ],
+   "values": {
+    "group_name": null,
+    "group_number": "G75221",
+    "ee_city": "Bend",
+    "ee_state": "OR",
+    "ee_zip": "97767",
+    "date_of_hire": "02/13/2014",
+    "annual_salary": "$89,000",
+    "face_amount": "$25,000",
+    "payroll_frequency": "Monthly",
+    "payroll_deduction_amount": "22.73"
+   },
+   "unscored": {
+    "insured_name": "Nadia K. Okafor",
+    "date_of_birth": "03/12/1973",
+    "ee_street": "2999 Cedar Ln",
+    "job_title": "Accountant",
+    "annual_premium": "272.74"
+   }
+  },
+  {
+   "form": "syn_t008",
+   "font": "Helvetica",
+   "empty": [
+    "ee_state",
+    "ee_zip",
+    "group_number",
+    "payroll_deduction_amount",
+    "payroll_frequency"
+   ],
+   "values": {
+    "group_name": "Bluewater Credit Union",
+    "group_number": null,
+    "ee_city": "Salem",
+    "ee_state": null,
+    "ee_zip": null,
+    "date_of_hire": "09/22/2023",
+    "annual_salary": "$44,000",
+    "face_amount": "$20,000",
+    "payroll_frequency": null,
+    "payroll_deduction_amount": null
+   },
+   "unscored": {
+    "insured_name": "Daniel K. Sato",
+    "date_of_birth": "09/07/1969",
+    "ee_street": "4492 Birch Way",
+    "job_title": "Registered Nurse",
+    "annual_premium": "298.52"
+   }
+  },
+  {
+   "form": "syn_t009",
+   "font": "Helvetica",
+   "empty": [
+    "annual_salary",
+    "group_name"
+   ],
+   "values": {
+    "group_name": null,
+    "group_number": "G26124",
+    "ee_city": "Spokane",
+    "ee_state": "WA",
+    "ee_zip": "99259",
+    "date_of_hire": "05/14/2005",
+    "annual_salary": null,
+    "face_amount": "$20,000",
+    "payroll_frequency": "Monthly",
+    "payroll_deduction_amount": "15.73"
+   },
+   "unscored": {
+    "insured_name": "Wei W. Sato",
+    "date_of_birth": "01/04/1977",
+    "ee_street": "5839 Cedar Ln",
+    "job_title": "Front Desk Agent",
+    "annual_premium": "188.80"
+   }
+  },
+  {
+   "form": "syn_t010",
+   "font": "Helvetica",
+   "empty": [
+    "annual_salary",
+    "ee_city",
+    "group_number"
+   ],
+   "values": {
+    "group_name": "Summit Ridge Schools",
+    "group_number": null,
+    "ee_city": null,
+    "ee_state": "AZ",
+    "ee_zip": "85293",
+    "date_of_hire": "05/24/2008",
+    "annual_salary": null,
+    "face_amount": "$10,000",
+    "payroll_frequency": "Semi-Monthly",
+    "payroll_deduction_amount": "4.57"
+   },
+   "unscored": {
+    "insured_name": "Ruth L. Garza",
+    "date_of_birth": "05/25/1988",
+    "ee_street": "9289 Oak St",
+    "job_title": "Line Cook",
+    "annual_premium": "109.70"
+   }
+  },
+  {
+   "form": "syn_t011",
+   "font": "Courier",
+   "empty": [],
+   "values": {
+    "group_name": "Bluewater Credit Union",
+    "group_number": "G72762",
+    "ee_city": "Bend",
+    "ee_state": "OR",
+    "ee_zip": "97776",
+    "date_of_hire": "05/26/2009",
+    "annual_salary": "$39,000",
+    "face_amount": "$50,000",
+    "payroll_frequency": "Monthly",
+    "payroll_deduction_amount": "38.33"
+   },
+   "unscored": {
+    "insured_name": "Nadia J. Kowalski",
+    "date_of_birth": "04/01/1963",
+    "ee_street": "2371 Birch Way",
+    "job_title": "Line Cook",
+    "annual_premium": "459.95"
+   }
+  },
+  {
+   "form": "syn_t012",
+   "font": "Helvetica",
+   "empty": [
+    "group_name",
+    "payroll_deduction_amount",
+    "payroll_frequency"
+   ],
+   "values": {
+    "group_name": null,
+    "group_number": "G70197",
+    "ee_city": "Bend",
+    "ee_state": "OR",
+    "ee_zip": "97725",
+    "date_of_hire": "04/18/2013",
+    "annual_salary": "$48,000",
+    "face_amount": "$25,000",
+    "payroll_frequency": null,
+    "payroll_deduction_amount": null
+   },
+   "unscored": {
+    "insured_name": "Samuel W. Petrov",
+    "date_of_birth": "06/28/1974",
+    "ee_street": "9612 Cedar Ln",
+    "job_title": "Driver",
+    "annual_premium": "348.77"
+   }
+  },
+  {
+   "form": "syn_t013",
+   "font": "Courier",
+   "empty": [
+    "annual_salary",
+    "ee_city"
+   ],
+   "values": {
+    "group_name": "Juniper Health Partners",
+    "group_number": "G23752",
+    "ee_city": null,
+    "ee_state": "OR",
+    "ee_zip": "97334",
+    "date_of_hire": "10/02/2017",
+    "annual_salary": null,
+    "face_amount": "$50,000",
+    "payroll_frequency": "Semi-Monthly",
+    "payroll_deduction_amount": "21.92"
+   },
+   "unscored": {
+    "insured_name": "Aisha E. Morales",
+    "date_of_birth": "07/18/1995",
+    "ee_street": "5565 Elm Dr",
+    "job_title": "Warehouse Associate",
+    "annual_premium": "525.99"
+   }
+  },
+  {
+   "form": "syn_t014",
+   "font": "Courier",
+   "empty": [
+    "annual_salary",
+    "ee_city",
+    "ee_zip"
+   ],
+   "values": {
+    "group_name": "Northwind Logistics",
+    "group_number": "G97517",
+    "ee_city": null,
+    "ee_state": "CA",
+    "ee_zip": null,
+    "date_of_hire": "03/11/2022",
+    "annual_salary": null,
+    "face_amount": "$15,000",
+    "payroll_frequency": "Weekly",
+    "payroll_deduction_amount": "4.05"
+   },
+   "unscored": {
+    "insured_name": "Maria M. Chowdhury",
+    "date_of_birth": "03/06/1963",
+    "ee_street": "6129 Cedar Ln",
+    "job_title": "Line Cook",
+    "annual_premium": "210.81"
+   }
+  },
+  {
+   "form": "syn_t015",
+   "font": "Helvetica",
+   "empty": [
+    "group_number"
+   ],
+   "values": {
+    "group_name": "Bluewater Credit Union LLC",
+    "group_number": null,
+    "ee_city": "Boise",
+    "ee_state": "ID",
+    "ee_zip": "83742",
+    "date_of_hire": "02/03/2007",
+    "annual_salary": "$120,000",
+    "face_amount": "$25,000",
+    "payroll_frequency": "Semi-Monthly",
+    "payroll_deduction_amount": "16.07"
+   },
+   "unscored": {
+    "insured_name": "Omar P. Quinn",
+    "date_of_birth": "08/25/1981",
+    "ee_street": "9300 Cedar Ln",
+    "job_title": "Accountant",
+    "annual_premium": "385.60"
+   }
+  },
+  {
+   "form": "syn_t016",
+   "font": "Courier",
+   "empty": [
+    "ee_zip"
+   ],
+   "values": {
+    "group_name": "Bluewater Credit Union LLC",
+    "group_number": "G53485",
+    "ee_city": "Tempe",
+    "ee_state": "AZ",
+    "ee_zip": null,
+    "date_of_hire": "06/09/2019",
+    "annual_salary": "$86,000",
+    "face_amount": "$20,000",
+    "payroll_frequency": "Weekly",
+    "payroll_deduction_amount": "4.35"
+   },
+   "unscored": {
+    "insured_name": "Carlos W. Dubois",
+    "date_of_birth": "05/05/1996",
+    "ee_street": "4489 Cedar Ln",
+    "job_title": "Driver",
+    "annual_premium": "226.06"
+   }
+  },
+  {
+   "form": "syn_t017",
+   "font": "Courier",
+   "empty": [
+    "annual_salary"
+   ],
+   "values": {
+    "group_name": "Ironwood Manufacturing Group",
+    "group_number": "G54400",
+    "ee_city": "Bend",
+    "ee_state": "OR",
+    "ee_zip": "97735",
+    "date_of_hire": "03/11/2023",
+    "annual_salary": null,
+    "face_amount": "$10,000",
+    "payroll_frequency": "Semi-Monthly",
+    "payroll_deduction_amount": "4.53"
+   },
+   "unscored": {
+    "insured_name": "Maria B. Haddad",
+    "date_of_birth": "11/20/1988",
+    "ee_street": "2079 Birch Way",
+    "job_title": "Warehouse Associate",
+    "annual_premium": "108.69"
+   }
+  },
+  {
+   "form": "syn_t018",
+   "font": "Helvetica",
+   "empty": [
+    "ee_city",
+    "ee_zip",
+    "payroll_deduction_amount",
+    "payroll_frequency"
+   ],
+   "values": {
+    "group_name": "Redrock Tooling Group",
+    "group_number": "G96230",
+    "ee_city": null,
+    "ee_state": "WA",
+    "ee_zip": null,
+    "date_of_hire": "02/01/2013",
+    "annual_salary": "$60,000",
+    "face_amount": "$10,000",
+    "payroll_frequency": null,
+    "payroll_deduction_amount": null
+   },
+   "unscored": {
+    "insured_name": "Omar L. Lindqvist",
+    "date_of_birth": "07/02/1973",
+    "ee_street": "5307 Elm Dr",
+    "job_title": "Accountant",
+    "annual_premium": "129.73"
+   }
+  },
+  {
+   "form": "syn_t019",
+   "font": "Helvetica",
+   "empty": [
+    "face_amount"
+   ],
+   "values": {
+    "group_name": "Summit Ridge Schools Group",
+    "group_number": "G51672",
+    "ee_city": "Tempe",
+    "ee_state": "AZ",
+    "ee_zip": "85223",
+    "date_of_hire": "08/20/2007",
+    "annual_salary": "$125,000",
+    "face_amount": null,
+    "payroll_frequency": "Semi-Monthly",
+    "payroll_deduction_amount": "5.87"
+   },
+   "unscored": {
+    "insured_name": "Omar M. Fontaine",
+    "date_of_birth": "09/17/2000",
+    "ee_street": "1379 Elm Dr",
+    "job_title": "Teller",
+    "annual_premium": "140.81"
+   }
+  },
+  {
+   "form": "syn_t020",
+   "font": "Courier",
+   "empty": [
+    "date_of_hire",
+    "payroll_deduction_amount",
+    "payroll_frequency"
+   ],
+   "values": {
+    "group_name": "Redrock Tooling LLC",
+    "group_number": "G89530",
+    "ee_city": "Spokane",
+    "ee_state": "WA",
+    "ee_zip": "99285",
+    "date_of_hire": null,
+    "annual_salary": "$101,000",
+    "face_amount": "$25,000",
+    "payroll_frequency": null,
+    "payroll_deduction_amount": null
+   },
+   "unscored": {
+    "insured_name": "Ruth E. Eriksen",
+    "date_of_birth": "09/20/1996",
+    "ee_street": "2250 Willow Ct",
+    "job_title": "Warehouse Associate",
+    "annual_premium": "248.92"
+   }
+  }
+ ]
+}
