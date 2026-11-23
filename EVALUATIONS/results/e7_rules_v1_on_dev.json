@@ -1,0 +1,49 @@
+{
+ "note": "Rules v1 (written on the real certificate only) scored on the synthetic dev forms BEFORE any rule was changed: the honest held-out number for v1. Measured once on the build machine (a different Tesseract build than the other result files), and at that time native-PDF extraction still kept form underscore glyphs, which hurt the native condition.",
+ "systems": {
+  "rules (typed) + verifier": {
+   "native": {
+    "precision": 1.0,
+    "recall": 0.378,
+    "values_on_empty_fields": 0
+   },
+   "scan300": {
+    "precision": 1.0,
+    "recall": 0.157,
+    "values_on_empty_fields": 0
+   },
+   "scan150": {
+    "precision": 1.0,
+    "recall": 0.18,
+    "values_on_empty_fields": 0
+   },
+   "all": {
+    "precision": 1.0,
+    "recall": 0.238,
+    "values_on_empty_fields": 0
+   }
+  },
+  "rules (typed)": {
+   "native": {
+    "precision": 1.0,
+    "recall": 0.378,
+    "values_on_empty_fields": 0
+   },
+   "scan300": {
+    "precision": 0.867,
+    "recall": 0.419,
+    "values_on_empty_fields": 0
+   },
+   "scan150": {
+    "precision": 0.875,
+    "recall": 0.285,
+    "values_on_empty_fields": 0
+   },
+   "all": {
+    "precision": 0.912,
+    "recall": 0.36,
+    "values_on_empty_fields": 0
+   }
+  }
+ }
+}
