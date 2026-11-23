@@ -1,0 +1,76 @@
+{
+ "rows": [
+  {
+   "doc": "proposal",
+   "pages": 16,
+   "native": 16,
+   "ocr": 0,
+   "sec_per_native_page": 0.07,
+   "sec_per_ocr_page": null,
+   "mean_ocr_conf": null,
+   "watermark_glyphs_removed": 0,
+   "covered_chars_dropped": 29
+  },
+  {
+   "doc": "master_app",
+   "pages": 3,
+   "native": 0,
+   "ocr": 3,
+   "sec_per_native_page": null,
+   "sec_per_ocr_page": 4.6,
+   "mean_ocr_conf": 93.8,
+   "watermark_glyphs_removed": 0,
+   "covered_chars_dropped": 0
+  },
+  {
+   "doc": "employee_app_blank",
+   "pages": 7,
+   "native": 7,
+   "ocr": 0,
+   "sec_per_native_page": 0.07,
+   "sec_per_ocr_page": null,
+   "mean_ocr_conf": null,
+   "watermark_glyphs_removed": 0,
+   "covered_chars_dropped": 0
+  },
+  {
+   "doc": "policy_specimen",
+   "pages": 8,
+   "native": 8,
+   "ocr": 0,
+   "sec_per_native_page": 0.02,
+   "sec_per_ocr_page": null,
+   "mean_ocr_conf": null,
+   "watermark_glyphs_removed": 64,
+   "covered_chars_dropped": 0
+  },
+  {
+   "doc": "certificate",
+   "pages": 36,
+   "native": 0,
+   "ocr": 36,
+   "sec_per_native_page": null,
+   "sec_per_ocr_page": 4.04,
+   "mean_ocr_conf": 93.3,
+   "watermark_glyphs_removed": 0,
+   "covered_chars_dropped": 0
+  },
+  {
+   "doc": "ws_map",
+   "pages": 2,
+   "native": 0,
+   "ocr": 2,
+   "sec_per_native_page": null,
+   "sec_per_ocr_page": 3.28,
+   "mean_ocr_conf": 77.2,
+   "watermark_glyphs_removed": 0,
+   "covered_chars_dropped": 0
+  }
+ ],
+ "total": {
+  "doc": "TOTAL",
+  "pages": 72,
+  "native": 31,
+  "ocr": 41
+ }
+}

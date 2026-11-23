@@ -1,0 +1,82 @@
+{
+ "engines": [
+  "tesseract reading 1",
+  "tesseract reading 2",
+  "docling"
+ ],
+ "text": {
+  "tesseract reading 1": {
+   "pages": 2,
+   "cer": 0.012,
+   "wer": 0.033,
+   "word_recall_any_order": 0.989,
+   "word_precision_any_order": 0.967,
+   "cer_by_page": {
+    "certificate_p001": 0.004,
+    "certificate_p005": 0.026
+   }
+  },
+  "tesseract reading 2": {
+   "pages": 2,
+   "cer": 0.015,
+   "wer": 0.036,
+   "word_recall_any_order": 0.991,
+   "word_precision_any_order": 0.965,
+   "cer_by_page": {
+    "certificate_p001": 0.006,
+    "certificate_p005": 0.03
+   }
+  },
+  "docling": {
+   "pages": 2,
+   "cer": 0.063,
+   "wer": 0.121,
+   "word_recall_any_order": 0.886,
+   "word_precision_any_order": 0.919,
+   "cer_by_page": {
+    "certificate_p001": 0.089,
+    "certificate_p005": 0.013
+   }
+  }
+ },
+ "fields": {
+  "tesseract reading 1": {
+   "emitted": 26,
+   "correct": 25,
+   "wrong": 1,
+   "gold_values": 28,
+   "precision": 0.962,
+   "recall": 0.893,
+   "f1": 0.926,
+   "values_on_null_fields": 0,
+   "sec_per_page": 4.08
+  },
+  "tesseract reading 2": {
+   "emitted": 26,
+   "correct": 26,
+   "wrong": 0,
+   "gold_values": 28,
+   "precision": 1.0,
+   "recall": 0.929,
+   "f1": 0.963,
+   "values_on_null_fields": 0,
+   "sec_per_page": 1.48
+  },
+  "docling": {
+   "emitted": 24,
+   "correct": 24,
+   "wrong": 0,
+   "gold_values": 28,
+   "precision": 1.0,
+   "recall": 0.857,
+   "f1": 0.923,
+   "values_on_null_fields": 0,
+   "sec_per_page": 3.16
+  }
+ },
+ "pages_per_engine": {
+  "tesseract reading 1": 72,
+  "tesseract reading 2": 72,
+  "docling": 39
+ }
+}
