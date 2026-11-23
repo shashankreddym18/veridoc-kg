@@ -122,8 +122,8 @@ macOS, Tesseract 5.5, llama3.1:8b through Ollama, cross-encoder/nli-deberta-v3-b
 7. **Scanned pages, Tesseract vs Docling** (`e2b`, 2 certificate pages transcribed by hand and checked by a
    second person). Character error rate: Tesseract 1.2% and 1.5% (two readings), Docling 6.3%. Docling
    finds 89% of the page's words (Tesseract 99%). Fields read from each engine's text, on the 39 scanned
-   pages: Tesseract 25-26 of 28 values correct, Docling 24 of 28, all with no wrong value, at 1.5-4.1 s
-   per page. Docling's first run scored 23% because the extractor kept only body text: it dropped the
+   pages: Tesseract 25 and 26 of 28 values correct (one wrong value, in reading 1), Docling 24 of 28 with none
+   wrong, at 1.5-4.1 s per page. Docling's first run scored 23% because the extractor kept only body text: it dropped the
    premium table on certificate page 5. Reading table cells, page headers and footers too brings it to 6%.
 8. **Deduction file.** 7 of 22 columns filled, all 7 correct. The other 15 are redacted or absent in the
    de-identified set, so they are left empty.
